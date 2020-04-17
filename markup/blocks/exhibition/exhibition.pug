@@ -1,0 +1,57 @@
+mixin exhibition(data)
+  .exhibition
+    .exhibition__container.container
+      .exhibition__slider
+        -
+          var slider = [
+            {title: 'Виртуальная выставка "Beauty Digital 2020"', date: 'Дата: с 15.06 до 12.07.2020г.'},
+            {title: 'Виртуальная выставка "Beauty Digital 2020 2"', date: 'Дата: с 15.06 до 12.07.2020г.'},
+            {title: 'Виртуальная выставка "Beauty Digital 2020 3"  ', date: 'Дата: с 15.06 до 12.07.2020г.'},
+            {title: 'Виртуальная выставка "Beauty Digital 2020 4"', date: 'Дата: с 15.06 до 12.07.2020г.'},
+            {title: 'Виртуальная выставка "Beauty Digital 2020 5"', date: 'Дата: с 15.06 до 12.07.2020г.'},
+            {title: 'Виртуальная выставка "Beauty Digital 2020 6"', date: 'Дата: с 15.06 до 12.07.2020г.'},
+            {title: 'Виртуальная выставка "Beauty Digital 2020 7"', date: 'Дата: с 15.06 до 12.07.2020г.'},
+            {title: 'Виртуальная выставка "Beauty Digital 2020 8"', date: 'Дата: с 15.06 до 12.07.2020г.'},
+
+          ]
+
+        each slide, i in slider
+
+          .exhibition__item
+            .exhibition__top
+              .exhibition__meta #{slide.date}
+              h2.exhibition__title #{slide.title}
+
+            .exhibition__image
+              img(src!='assets/images/content/slider-image-' + (i+1) + '.jpg' alt='')
+
+            a.exhibition__more(href="#") Подробнее
+              .exhibition__more-icon
+
+
+      .exhibition__thumbs
+        -
+          var ii = 1;
+
+          var thumbs = [
+            {text: 'Общая “Вход”'},
+            {text: 'Общая “Вход 2”'},
+            {text: 'Общая “Вход 3”'},
+            {text: 'Общая “Вход 4”'},
+            {text: 'Общая “Вход 5”'},
+            {text: 'Общая “Вход 6”'},
+            {text: 'Общая “Вход 7”'},
+            {text: 'Общая “Вход 8”'},
+
+          ]
+
+        each thumb, i in thumbs
+
+          .exhibition__thumbs-item(style='background-image: url(assets/images/content/thumb-' + (ii++) + '.jpg);')
+            a.exhibition__thumbs-link(href="#") #{thumb.text}
+
+      .exhibition__nav
+        .exhibition__dots
+
+        button.exhibition__arrow.exhibition__arrow_back
+        button.exhibition__arrow.exhibition__arrow_next
