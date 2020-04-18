@@ -1,7 +1,69 @@
 .nav
+  display: flex
+
+  &.nav_active
+    position: relative
+    .nav__list
+      position: absolute
+      z-index: 1
+      top: -6px
+      left: 104px
+      // max-width: 170px
+      width: 170px
+      display: flex
+      align-items: flex-start
+      justify-content: flex-start
+      flex-direction: column
+      background-color: #2b345a
+      text-align: left
+      border-radius: 10px
+
+      +r($large)
+        left: 74px
+
+      +r($medium)
+        left: 45px
+
+
+    .nav__item
+      width: 100%
+      &:last-child
+        .nav__link
+          border-bottom: none
+
+    .nav__link
+      border-bottom:  1px #4d6bef solid
+      padding-top: 16px
+      padding-bottom: 16px
+      display: block
+      color: #ffffff
+      font-family: $f
+      font-size: 14px
+      font-weight: 500
+      text-align: center
+      text-decoration: none
+      &:hover
+        text-decoration: none
+
+    .nav__button
+      margin-top: 0
+
+
+  &__button
+    margin-right: 20px
+    // margin-top: 4px
+    display: none
+    cursor: pointer
+    +r($large)
+      display: block
+
   &__list
-    justify-content: center
+    justify-content: space-between
     align-items: center
+
+    +r($large)
+      display: none
+
   &__item
     // margin-right: 55px
 
@@ -29,8 +91,8 @@
 
   &__link
     padding-top: 7px
-    padding-right: 20px
-    padding-left: 20px
+    padding-right: 18px
+    padding-left: 18px
     padding-bottom: 5px
     display: block
     color: inherit
@@ -38,4 +100,38 @@
     white-space: nowrap
     text-decoration: none
     +tr(all .3s ease)
+
+
+.nav_secondary
+  .nav__list
+    max-width: 461px
+    width: 100%
+    +r($large)
+      padding-right: 30px
+      display: flex
+
+    +r($small)
+      display: block
+      flex-wrap: wrap
+  .nav__item
+    +r($large)
+      max-width: 50%
+    +r($small)
+      margin-bottom: 10px
+      max-width: 100%
+
+
+    &:hover
+      .nav__link
+        background-color: transparent
+        border-radius: 3px
+        color: darken($white, 10)
+        box-shadow: none
+        +tr(all .3s ease)
+
+
+  .nav__link
+    padding-right: 0
+    padding-left: 0
+
 

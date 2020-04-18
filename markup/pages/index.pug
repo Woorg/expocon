@@ -28,7 +28,7 @@ html(class="no-js", lang="ru")
 
   head
     +head(head.defaults)
-  body.page
+  body.page.lazy(data-bg='url(assets/images/general/bg.jpg)')
     |%=symbols=%
     .page__inner
       +header()
@@ -111,7 +111,7 @@ html(class="no-js", lang="ru")
         var myPlacemark2 = new ymaps.Placemark([57.626559, 39.893804],
         {
           city: 'Ярославль',
-          src: '/assets/images/content/catalog-company.png',
+          src: 'assets/images/content/catalog-company.png',
           alt: 'company name',
         }, {
           iconContentLayout: markerClass,
@@ -127,7 +127,7 @@ html(class="no-js", lang="ru")
         var myPlacemark3 = new ymaps.Placemark([56.326797, 44.006516],
         {
           city: 'Нижний Новгород',
-          src: '/assets/images/content/catalog-company.png',
+          src: 'assets/images/content/catalog-company.png',
           alt: 'company name',
         }, {
           iconContentLayout: markerClass,
@@ -142,7 +142,7 @@ html(class="no-js", lang="ru")
         var myPlacemark4 = new ymaps.Placemark([58.522810, 31.269915],
         {
           city: 'Великий Новгород',
-          src: '/assets/images/content/catalog-company.png',
+          src: 'assets/images/content/catalog-company.png',
           alt: 'company name',
         }, {
           iconContentLayout: markerClass,

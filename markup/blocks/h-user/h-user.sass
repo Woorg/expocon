@@ -3,7 +3,7 @@
   width: 100%
   &__button
     padding-top: 9px
-    padding-right: 21px
+    padding-right: 24px
     padding-bottom: 6px
     padding-left: 21px
     height: 33px
@@ -14,8 +14,14 @@
     font-weight: 500
     line-height: 1
     text-decoration: none
+    white-space: nowrap
     box-shadow: 4px 3px 26px 3px rgba(77, 107, 239, 0.81)
     border-radius: 5px
+
+    +r($medium)
+      padding-left: 10px
+      padding-right: 10px
+
     &:hover
       background-color: darken(#4d6bef, 10)
 
@@ -65,6 +71,11 @@
     object-fit: cover
     +bg($h-user)
     background-repeat: no-repeat
+    flex-shrink: 0
+
+    +r($medium)
+      margin-left: 10px
+
     img
       position: absolute
       top: 0

@@ -11,6 +11,7 @@ module.exports = function exhibitionSlider () {
         // infinite: false,
         loop: true,
         lazyLoad: 'ondemand',
+        fade: true,
         speed: 300,
         focusOnSelect: true,
         waitForAnimate: false,

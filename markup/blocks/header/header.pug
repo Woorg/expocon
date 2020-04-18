@@ -2,10 +2,13 @@ mixin header(data)
   header.header
     .header__container.container
       .header__top.flex
-        a.logo.header__logo
+        a.logo.header__logo(href="#")
           img.logo__image.lazy(data-src="assets/images/general/logo@2x.png", alt="logo Expocon")
 
         nav.header__nav.nav
+
+          != pugHelpers.Icon.call(locals, {iconName: 'menu-icon', className: 'nav__button'})
+
           ul.nav__list.flex
             li.nav__item.nav__item_current
               a.nav__link(href="#") Главная
@@ -16,7 +19,8 @@ mixin header(data)
             li.nav__item
               a.nav__link(href="#") Контакты
 
-        a.header__phone.phone(href="tel:+70000000") 8 000 000 00 00
+        .header__phone
+          a.phone(href="tel:+70000000") 8 000 000 00 00
 
         .header__h-user.h-user.flex
           .h-user__list-w
@@ -30,6 +34,7 @@ mixin header(data)
           .h-user__avatar
 
       .header__bottom.flex
+
         .header__search.search
           form.flex(action="", method="get")
             .search__field

@@ -68,6 +68,22 @@ import aboutSlider from '../../blocks/about/about';
     });
 
 
+    $('.nav__button').on('click', function (e) {
+      e.preventDefault()
+
+      $('.header__nav').toggleClass('nav_active');
+
+    });
+
+
+    $(document).on('click', function(e) {
+      if (!$(e.target).closest('.nav__button').length) {
+        $('.header__nav').removeClass('nav_active');
+      }
+    });
+
+
+
     $('.catalog__category').on( 'click', function (e) {
       e.preventDefault();
       console.log(e);

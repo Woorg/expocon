@@ -1,7 +1,14 @@
 .about
+  position: relative
+  z-index: 1
   &__container
     position: relative
-    padding-top: 123px
+    z-index: 0
+    padding-top: 176px
+    +r($medium)
+      padding-top: (176px / 2)
+
+
     &:after
       position: absolute
       z-index: -1
@@ -11,12 +18,16 @@
       height: 3375px
       content: ''
       background-image: url('../images/general/planet-bg.png')
-      background-position: 50% 0
+      background-position: 0 0
       background-repeat: no-repeat
       // transform: translateX(-50%)
   &__slider
     margin-right: -60px
     margin-left: -30px
+    +r($medium)
+      margin-right: 0
+      margin-left: 0
+
 
   // &__item
 
@@ -25,6 +36,17 @@
     padding-right: 30px
     padding-bottom: 30px
     padding-left: 30px
+    +r($medium)
+      padding-right: 0
+      padding-bottom: 0
+      padding-left: 0
+      padding-top: 0
+      height: auto
+      flex-wrap: wrap
+      flex-direction: column
+      overflow: hidden
+      border-radius: 0 0 10px 10px
+
 
   &__entry,
   &__image
@@ -33,44 +55,72 @@
     height: 402px
     border-radius: 10px 10px 10px 10px
 
+    +r($medium)
+      max-width: 100%
+      width: auto
+      height: auto
+
   &__image
     order: -1
     max-width: 47.5%
     font-size: 0
+
+    +r($medium)
+      max-width: 100%
+      width: auto
+
     img
       border-radius: 10px 0 0 10px
+      +r($medium)
+        height: 100%
+        border-radius: 10px 10px 0 0
+
+
 
   &__entry
-    padding-top: 33px
+    padding-top: 38px
     padding-right: 46px
     padding-bottom: 33px
-    padding-left: 30px
+    padding-left: 27px
     display: flex
     flex-direction: column
     background-color: #4d6bef
     background-image: url('../images/general/about-gradient.png')
+    background-repeat: no-repeat
     box-shadow: 4px 3px 26px 3px rgba(77, 107, 239, 0.81)
     border-radius: 0 10px 10px 0
 
+    +r($medium)
+      border-radius: 0 0 10px 10px
+      background-image: none
 
   &__title
-    margin-bottom: 20px
+    margin-bottom: 29px
 
   &__text
-    line-height: 1.285
+    max-height: 209px
+    overflow: hidden
+    +r($medium)
+      max-height: 100000px
     p
       margin-bottom: 20px
+      line-height: 1.285
 
   &__more
     margin-top: auto
+    // margin-right: 20px
     align-self: flex-end
 
   &__nav
     position: absolute
-    top: calc(100% - 75px)
-    left: calc(48.5% + 30px)
-    max-width: 98px
+    top: calc(100% - 79px)
+    left: calc(48.5% + 35px)
+    max-width: 112px
     width: 100%
+    +r($medium)
+      top: calc(100% - 50px)
+      left: 40px
+
 
   &__nav-arrow
     position: absolute

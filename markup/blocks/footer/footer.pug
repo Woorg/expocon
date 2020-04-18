@@ -1,3 +1,49 @@
 mixin footer(data)
   footer.footer
-    .footer__container.container
+    .footer__container.container.flex
+
+      a.footer__logo.logo(href="#")
+        img.logo__image.lazy(data-src="assets/images/general/logo@2x.png", alt="logo Expocon")
+
+      .footer__links
+        a.footer__link(href="#") Написать нам
+
+        a.footer__link(href="#") Пользовательское соглашение
+
+        a.footer__link(href="#") Политика конфиденциальности
+
+      .footer__main
+        nav.footer__nav.nav.nav_secondary
+          ul.nav__list.flex
+            li.nav__item
+              a.nav__link(href="#") Главная
+            li.nav__item
+              a.nav__link(href="#") О выставке
+            li.nav__item
+              a.nav__link(href="#") Экспоненты
+            li.nav__item
+              a.nav__link(href="#") Контакты
+
+        .footer__payment.payment.flex
+          .payment__text Способы оплаты:
+          .payment__w.flex
+            .payment__variant
+              img.lazy(data-src="assets/images/general/visa.png", alt="")
+            .payment__variant
+              img.lazy(data-src="assets/images/general/master.png", alt="")
+            .payment__variant
+              img.lazy(data-src="assets/images/general/mir.png", alt="")
+
+      .footer__contacts
+        a.footer__contact(href="tel:+70000000000") 8 000 000 00 00
+        a.footer__contact(href="mailto:jgfkglvu@mail.ru") jgfkglvu@mail.ru
+
+        .footer__social.social.flex
+          a.social__link(href="")
+            img(src="assets/images/general/social-1.png", alt="")
+          a.social__link(href="")
+            img(src="assets/images/general/social-2.png", alt="")
+          a.social__link(href="")
+            img(src="assets/images/general/social-3.png", alt="")
+          a.social__link(href="")
+            img(src="assets/images/general/social-4.png", alt="")

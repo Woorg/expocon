@@ -1,5 +1,10 @@
 .exhibition
+  position: relative
+  z-index: 2
   padding-top: 115px
+  +r($medium)
+    padding-top: (115px / 2)
+
   &__container
     position: relative
     z-index: 1
@@ -7,13 +12,20 @@
     position: absolute
     z-index: 0
     top: -60px
-    left: -60px
-    right: -60px
+    left: -30px
+    right: -30px
     height: 1142px
     content: ''
     background: rgba(0,0,0, .3)
+    +r($medium)
 
-  // &__slider
+      top: -30px
+      height: (1142px / 2)
+
+  &__slider
+    margin-bottom: 0
+    +r($medium)
+      margin-bottom: 0 !important
 
   &__item
     position: relative
@@ -24,9 +36,12 @@
 
   &__top
     padding-bottom: 46px
+    +r($medium)
+      padding-bottom: (46px / 2)
+
 
   &__meta
-    margin-bottom: 22px
+    margin-bottom: 13px
     font-size: 18px
     font-weight: 500
     line-height: 1
@@ -61,6 +76,10 @@
     font-weight: 500
     line-height: 1
     text-decoration: none
+    +r($medium)
+      bottom: (40px / 2)
+      left: (35px / 2)
+      font-size: 20px
 
   &__more-icon
     position: relative
@@ -152,6 +171,7 @@
 
   &__nav
     margin: auto
+    margin-top: 32px
     max-width: 262px
     width: 100%
 
@@ -166,7 +186,7 @@
 
   .slick-dots
     z-index: 1
-    bottom: -14px
+    bottom: -15px
     display: flex
     justify-content: center
     font-size: 0
@@ -189,8 +209,8 @@
           z-index: 1
           top: 50%
           left: 50%
-          width: 9px
-          height: 9px
+          width: 7px
+          height: 7px
           content: ""
           border-radius: 50%
           opacity: 1
@@ -200,7 +220,7 @@
 
     .slick-active
       button
-        // top: -2px
+        top: -3px
         width: 21px
         height: 21px
         background-color: rgba(77,107,239,.4)
