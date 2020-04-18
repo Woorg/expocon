@@ -7,9 +7,9 @@ body
   min-height: 100vh
   display: flex
   flex-direction: column
-  // background-color: #f1f7fc
-  background-color: #161b30
-  color: #000
+  background: #161b30 url('../images/general/bg.jpg') 50% 0 no-repeat
+
+  color: $white
   font-family: $f
   font-size: 14px
   font-weight: 400
@@ -40,13 +40,16 @@ img
 
 .slider-nav
   position: relative
-  &__prev,
-  &__next
+
+  &__arrow
     +resetbutton()
+
+  &__arrow_back,
+  &__arrow_next
     position: absolute
     z-index: 1
     top: 50%
-    width: 34px
+    width: 26px
     text-align: left
     transform: translateY(-50%)
     +tr(opacity .3s ease)
@@ -55,22 +58,19 @@ img
       top: 50%
       left: 50%
       content: ""
-      // +bg($arrow)
-      transform: translate(-50%, -50%)
+      +bg($arrow)
+      transform: translate(-50%, -50%) rotate(0deg)
     &:hover
       opacity: .8
       +tr(opacity .3s ease)
 
-  &__prev
+  &__arrow_back
     left: 0
-    transform: translateY(-50%)
+    transform: translateY(-50%) rotate(0deg)
   //   &:after
 
-  &__next
-    right: -12px
+  &__arrow_next
+    right: 0
     &:after
-      transform: translate(-50%, -50%) rotate(180deg)
+      transform: translate(-50%, -50%) rotate(-180deg)
 
-  &__prev-text,
-  &__next-text
-    +visuallyhidden()

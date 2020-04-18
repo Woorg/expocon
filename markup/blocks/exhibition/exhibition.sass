@@ -1,1 +1,217 @@
+.exhibition
+  padding-top: 115px
+  &__container
+    position: relative
+    z-index: 1
+  &__bg
+    position: absolute
+    z-index: 0
+    top: -60px
+    left: -60px
+    right: -60px
+    height: 1142px
+    content: ''
+    background: rgba(0,0,0, .3)
 
+  // &__slider
+
+  &__item
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    line-height: 1
+
+  &__top
+    padding-bottom: 46px
+
+  &__meta
+    margin-bottom: 22px
+    font-size: 18px
+    font-weight: 500
+    line-height: 1
+
+  &__title
+    font-size: 30px
+    font-weight: 500
+    line-height: 1.2
+
+  &__image
+    max-width: 100%
+    border-radius: 10px
+    font-size: 0
+    overflow: hidden
+    img
+      border-radius: 11px
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  &__more
+    position: absolute
+    bottom: 40px
+    left: 35px
+    z-index: 1
+    margin-top: auto
+    display: flex
+    align-items: center
+    color: inherit
+    font-family: $f
+    font-size: 24px
+    font-weight: 500
+    line-height: 1
+    text-decoration: none
+
+  &__more-icon
+    position: relative
+    margin-left: 18px
+    width: 71px
+    height: 71px
+    flex-shrink: 0
+    background-color: rgba(77,107,239,.4)
+    border-radius: 50%
+    +tr(all .3s ease)
+
+    &:hover
+      opacity: 0.95
+      +tr(all .3s ease)
+
+    &:after,
+    &:before
+      position: absolute
+      top: 50%
+      left: 50%
+      content: ""
+      transform: translate(-50%, -50%)
+
+    &:before
+      width: 49px
+      height: 49px
+      background-color: #4d6bef
+      border-radius: 50%
+      box-shadow: 4px 3px 26px 3px rgba(77, 107, 239, 0.81)
+
+    &:after
+      position: absolute
+      +bg($arrow)
+      transform: translate(-50%, -50%) rotate(180deg)
+
+  &__thumbs
+    margin-right: -15px
+    margin-left: -15px
+
+  &__thumbs-item
+    padding-top: 30px
+    padding-right: 15px
+    padding-bottom: 30px
+    padding-left: 15px
+    display: block
+
+    &.slick-current,
+    &:hover
+      .exhibition__thumbs-link
+        height: 100%
+        background: rgba(77,107,239, .85)
+        visibility: visible
+        opacity: 1
+        box-shadow: 4px 3px 26px 3px rgba(77, 107, 239, 0.81)
+        border-radius: 10px
+        +tr(all .3s ease)
+
+  &__thumbs-w
+    height: 100%
+    background-size: cover
+    background-repeat: no-repeat
+    box-shadow: none
+    border-radius: 10px
+    +tr(all .3s ease)
+
+
+  &__thumbs-link
+    min-height: 150px
+    margin-top: auto
+    margin-bottom: auto
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    color: $white
+    font-size: 18px
+    font-weight: 500
+    line-height: 1
+    text-decoration: none
+    visibility: hidden
+    opacity: 0
+    border-radius: 10px
+    +tr(all .3s ease)
+
+
+  &__nav
+    margin: auto
+    max-width: 262px
+    width: 100%
+
+  // &__dots
+
+  // &__arrow
+
+  // &__arrow_back
+
+  // &__arrow_next
+
+
+  .slick-dots
+    z-index: 1
+    bottom: -14px
+    display: flex
+    justify-content: center
+    font-size: 0
+    // bottom: 12px
+    li
+      padding: 0
+      height: 21px
+      button
+        +resetbutton()
+        position: relative
+        z-index: 1
+        top: -4px
+        margin: 0
+        padding: 0
+        width: 22px
+        height: 22px
+        &:before
+          border: 1px solid #ffffff
+          padding: 0
+          z-index: 1
+          top: 50%
+          left: 50%
+          width: 9px
+          height: 9px
+          content: ""
+          border-radius: 50%
+          opacity: 1
+          transform: translate(-50%, -50%)
+
+
+
+    .slick-active
+      button
+        // top: -2px
+        width: 21px
+        height: 21px
+        background-color: rgba(77,107,239,.4)
+        border-radius: 50%
+        box-shadow: 4px 3px 26px 3px rgba(77, 107, 239, 0.81)
+        &:before
+          top: 50%
+          left: 50%
+          border: none
+          width: 13px
+          height: 13px
+          background-color: #4d6bef
+          text-indent: -9999px
+          transform: translate(-50%, -50%)

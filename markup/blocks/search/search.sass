@@ -1,0 +1,35 @@
+.search
+  width: 100%
+
+  // form
+
+  &__field
+    position: relative
+    width: 100%
+
+    &:after
+      position: absolute
+      top: 50%
+      left: 12px
+      content: ''
+      +bg($search-icon)
+      transform: translateY(-50%)
+
+  &__input
+    +resetbutton()
+    padding-left: 45px
+    width: 100%
+    height: 39px
+    border-radius: 5px 0 0 5px
+    background-color: $white
+
+  &__submit
+    +resetbutton()
+    padding-left: 34px
+    padding-right: 34px
+    height: 39px
+    background-color: #4d6bef
+    color: $white
+    font-size: 21px
+    font-weight: 500
+    border-radius: 0 5px 5px 0

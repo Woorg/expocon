@@ -10,6 +10,8 @@ html(class="no-js", lang="ru")
 
   include ../blocks/stats/stats.pug
   include ../blocks/catalog/catalog.pug
+  include ../blocks/map/map.pug
+
 
   //- include ../blocks/stats/stats.pug
   //- include ../blocks/levels/levels.pug
@@ -35,7 +37,7 @@ html(class="no-js", lang="ru")
         +about()
         +stats()
         +catalog()
-
+        +map()
       //- +first-screen()
 
       //- +stats()
@@ -55,7 +57,7 @@ html(class="no-js", lang="ru")
       //- +popup-gift()
       //- +popup-xgame()
 
-
+    script(src="//api-maps.yandex.ru/2.1/?apikey=d491e610-d9d0-4022-9b4c-e2d184cf5425&lang=ru_RU")
     script(src='%=static=%js/separate-js/lazyload.min.js' defer)
     script(src='%=static=%js/separate-js/jquery.min.js' defer)
     script(src='%=static=%js/separate-js/jquery.magnific-popup.min.js' defer)
@@ -63,3 +65,100 @@ html(class="no-js", lang="ru")
 
     script(src='%=static=%js/main%=hash=%%=min=%.js' defer)
 
+
+    script.
+      ymaps.ready(init);
+
+      function init() {
+        var myMap = new ymaps.Map('map', {
+          center: [55.720418, 37.772047],
+          zoom: 6,
+          //- controls: ['']
+        }, {
+          searchControlProvider: ''
+        });
+
+        var markerClass = ymaps.templateLayoutFactory.createClass(
+          '<div class="marker" >' +
+          '<div class="marker__arrow"></div>' +
+          '<div class="marker__item"><div class="marker__image">' +
+          '<img src="{{ properties.src }}" alt="{{ properties.alt }}"/>' +
+          '</div>' +
+          '<div class="marker__entry"><div class="marker__title">{{ properties.city }}</div>' +
+          '</div>' +
+          '</div>'
+        );
+
+
+        var myPlacemark = new ymaps.Placemark([55.755062, 37.617184],
+        {
+          city: 'Москва',
+          src: '/assets/images/content/catalog-company.png',
+          alt: 'company name',
+        }, {
+          //- iconContentLayout: markerClass,
+          //- iconLayout: markerClass,
+          iconContentLayout: markerClass,
+          iconLayout: 'default#imageWithContent',
+          iconImageHref: '',
+          //- balloonContentLayout: markerClass,
+          iconImageSize: [282, 169],
+          iconImageOffset: [-62, -129]
+
+        });
+
+
+        var myPlacemark2 = new ymaps.Placemark([57.626559, 39.893804],
+        {
+          city: 'Ярославль',
+          src: '/assets/images/content/catalog-company.png',
+          alt: 'company name',
+        }, {
+          iconContentLayout: markerClass,
+          iconLayout: 'default#imageWithContent',
+          iconImageHref: '',
+          //- balloonContentLayout: markerClass,
+          iconImageSize: [282, 169],
+          iconImageOffset: [-62, -129]
+          //- iconImageOffset: [-282, 169]
+        });
+
+
+        var myPlacemark3 = new ymaps.Placemark([56.326797, 44.006516],
+        {
+          city: 'Нижний Новгород',
+          src: '/assets/images/content/catalog-company.png',
+          alt: 'company name',
+        }, {
+          iconContentLayout: markerClass,
+          iconLayout: 'default#imageWithContent',
+          iconImageHref: '',
+          //- balloonContentLayout: markerClass,
+          iconImageSize: [282, 169],
+          iconImageOffset: [-62, -129]
+          //- iconImageOffset: [-282, 169]
+        });
+
+        var myPlacemark4 = new ymaps.Placemark([58.522810, 31.269915],
+        {
+          city: 'Великий Новгород',
+          src: '/assets/images/content/catalog-company.png',
+          alt: 'company name',
+        }, {
+          iconContentLayout: markerClass,
+          iconLayout: 'default#imageWithContent',
+          iconImageHref: '',
+          //- balloonContentLayout: markerClass,
+          iconImageSize: [282, 169],
+          iconImageOffset: [-62, -129]
+          //- iconImageOffset: [-282, 169]
+        });
+
+
+        myMap.geoObjects
+          .add(myPlacemark)
+          .add(myPlacemark2)
+          .add(myPlacemark3)
+          .add(myPlacemark4);
+
+      }

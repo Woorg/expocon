@@ -1,29 +1,61 @@
 .header
-  background-color: #292422
-  display: none
-  +mq($medium)
-    display: block
+  position: relative
+  z-index: 1
+  background-color: rgba(0, 0, 0, .3)
+  // opacity: 0.3
   &__container
-    padding-top: 10px
-    padding-bottom: 0px
-    line-height: 1
-    justify-content: center
-    +mq($medium)
-      padding-top: 70px
-      justify-content: flex-start
+    color: $white
+  &__top
+    padding-top: 27px
+    align-items: center
+  &__bottom
+    padding-top: 34px
+    padding-bottom: 50px
+
   &__logo
-    max-width: 66px
+    max-width: 141px
     width: 100%
     height: auto
-    +mq($medium)
-      max-width: 90px
 
+  &__nav
+    margin-left: auto
+    max-width: 570px
+    width: 100%
+
+  &__phone
+    margin-left: auto
+    max-width: 160px
+    width: 100%
+
+  &__h-user
+    margin-left: 40px
+
+  &__search
+    max-width: 100%
 
 .logo
-  color: $white
-  font-size: 23px
-  font-weight: 500
+  max-width: 141px
+  width: 100%
+  flex-shrink: 0
+
+
+.phone
+  position: relative
+  padding-left: 24px
+  display: flex
+  flex-shrink: 0
+  color: inherit
+  font-family: $fL
+  font-size: 16px
+  font-weight: 300
+  line-height: 1
   text-decoration: none
-  &__name
-    +visuallyhidden()
+  &:after
+    position: absolute
+    left: 0
+    top: 50%
+    content: ''
+    +bg($phone)
+    transform: translateY(-50%)
+
 

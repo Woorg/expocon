@@ -22,26 +22,27 @@
 
 .button
   +resetbutton()
-  padding-top: 11px
-  padding-right: 40px
-  padding-bottom: 13px
-  padding-left: 42px
+  border: 1px solid #ffffff
+  padding-top: 8px
+  padding-right: 20px
+  padding-bottom: 9px
+  padding-left: 20px
+  height: 33px
   display: inline-block
   vertical-align: top
-  background-color: #00b5f4
+  background-color: transparent
   color: $white
-  font-size: 24px
-  font-weight: 900
+  font-size: 16px
+  font-weight: 500
   line-height: 1
+  border-radius: 5px
   text-decoration: none
-  text-transform: uppercase
-  +tr(background-color .3s ease)
-  +mq($medium)
-    font-size: 28px
+  +tr(all .3s ease)
+  box-shadow: 4px 3px 26px 3px rgba(77, 107, 239, 0.81)
 
   &:hover
-    background-color: darken(#00b5f4, 10)
-    +tr(background-color .3s ease)
+    border: 1px solid darken(#ffffff, 10)
+    +tr(all .3s ease)
 
 
 

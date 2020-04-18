@@ -1,1 +1,88 @@
+.about
+  &__container
+    position: relative
+    padding-top: 123px
+    &:after
+      position: absolute
+      z-index: -1
+      top: -715px
+      left: -16px
+      width: 2507px
+      height: 3375px
+      content: ''
+      background-image: url('../images/general/planet-bg.png')
+      background-position: 50% 0
+      background-repeat: no-repeat
+      // transform: translateX(-50%)
+  &__slider
+    margin-right: -60px
+    margin-left: -30px
+
+  // &__item
+
+  &__item-w
+    padding-top: 15px
+    padding-right: 30px
+    padding-bottom: 30px
+    padding-left: 30px
+
+  &__entry,
+  &__image
+    max-width: 50%
+    width: 100%
+    height: 402px
+    border-radius: 10px 10px 10px 10px
+
+  &__image
+    order: -1
+    max-width: 47.5%
+    font-size: 0
+    img
+      border-radius: 10px 0 0 10px
+
+  &__entry
+    padding-top: 33px
+    padding-right: 46px
+    padding-bottom: 33px
+    padding-left: 30px
+    display: flex
+    flex-direction: column
+    background-color: #4d6bef
+    background-image: url('../images/general/about-gradient.png')
+    box-shadow: 4px 3px 26px 3px rgba(77, 107, 239, 0.81)
+    border-radius: 0 10px 10px 0
+
+
+  &__title
+    margin-bottom: 20px
+
+  &__text
+    line-height: 1.285
+    p
+      margin-bottom: 20px
+
+  &__more
+    margin-top: auto
+    align-self: flex-end
+
+  &__nav
+    position: absolute
+    top: calc(100% - 75px)
+    left: calc(48.5% + 30px)
+    max-width: 98px
+    width: 100%
+
+  &__nav-arrow
+    position: absolute
+    top: 50%
+    +resetbutton()
+    +bg($arrow)
+    transform: translateY(-50%)
+
+  &__nav-arrow_back
+    left: 0
+  &__nav-arrow_next
+    right: 0
+    transform: translate(-50%, -50%) rotate(180deg)
+
 

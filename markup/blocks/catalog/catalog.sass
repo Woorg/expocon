@@ -1,1 +1,219 @@
+.catalog
+  &__container
+    position: relative
+
+  &__bg
+    position: absolute
+    z-index: -1
+    top: -60px
+    right: -60px
+    left: -60px
+    height: 688px
+    background-color: rgba(0,0,0, .3)
+
+  &__title
+    margin-bottom: 60px
+    text-align: center
+
+  &__top
+    text-align: center
+
+  &__sub
+    position: relative
+    // left: 0
+    // bottom: calc(100%)
+    margin-bottom: 50px
+    margin-right: 15px
+    margin-left: 15px
+    padding-top: 30px
+    padding-right: 30px
+    padding-bottom: 30px
+    padding-left: 30px
+    max-width: 100%
+    width: 100%
+    display: none
+    background-color: #ffffff
+    text-align: center
+    border-radius: 10px
+
+    .catalog__more
+      border-bottom: 1px solid #141a2f
+      margin-top: 0
+      padding-bottom: 0
+      color: #141a2f
+
+  &__sub_active
+    display: block
+
+  &__sub-triangle
+    position: absolute
+    bottom: -48px
+    left: 74px
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 48px 50px 0 50px
+    border-color: #ffffff transparent transparent transparent
+
+  &__items
+    margin-right: -15px
+    margin-left: -15px
+    flex-wrap: wrap
+
+  &__items_sub
+
+    .catalog__item
+      padding-right: 9px
+      padding-left: 9px
+      max-width: 25%
+      height: 91px
+      &:hover
+        color: $white
+
+        .catalog__item-entry
+          color: $white
+
+    .catalog__image
+      width: 94px
+      height: 100%
+      border-radius: 5px 0 0 5px
+      border: 1px solid #0f1224
+      background-color: #ffffff
+
+    .catalog__item-entry
+      border: 1px solid #0f1224
+      border-width: 1px 1px 1px 0
+      padding-top: 0
+      padding-bottom: 0
+      width: 170px
+      height: 100%
+      justify-content: center
+      color: #161b30
+      font-size: 14px
+      border-radius: 0 5px 5px 0
+    .catalog__item-title
+      margin-bottom: 0
+
+
+  &__item
+    margin-bottom: 35px
+    padding-right: 15px
+    padding-left: 15px
+    max-width: 33.3%
+    width: 100%
+    height: 169px
+    display: flex
+    align-items: center
+    color: inherit
+    text-decoration: none
+    text-align: left
+
+    &:hover
+      .catalog__item-entry
+        margin-top: -1px
+        margin-right: -1px
+        // margin-left: -1px
+        margin-bottom: -1px
+        border: 1px solid transparent
+        background-color: #4d6bef
+        +tr(all .3s ease)
+
+  &__image
+    padding-left: 8px
+    padding-right: 16px
+    height: 100%
+    display: flex
+    // flex-shrink: 0
+    justify-content: center
+    align-items: center
+    background-color: #ffffff
+    border-radius: 5px 0 0 5px
+
+  &__item-entry
+    border: 1px solid #ffffff
+    border-width: 1px 1px 1px 0
+    padding-top: 33px
+    padding-right: 20px
+    padding-left: 35px
+    padding-bottom: 33px
+    height: 100%
+    display: flex
+    flex-direction: column
+    background: transparent
+    font-size: 18px
+    font-weight: 500
+    line-height: 1
+
+    border-radius: 0 5px 5px 0
+    +tr(all .3s ease)
+
+  &__item-title
+    margin-bottom: auto
+
+  &__item-country,
+  &__item-city
+    margin-top: auto
+    font-size: 16px
+
+
+  &__more
+    border-bottom: 1px solid $white
+    margin-top: 32px
+    padding-bottom: 1px
+    display: inline-block
+    vertical-align: top
+    font-size: 18px
+    color: inherit
+    text-decoration: none
+    +tr(all .3s ease)
+    &:hover
+      border-bottom: 1px solid transparent
+      +tr(all .3s ease)
+
+
+  &__bottom
+    padding-top: 45px
+    padding-bottom: 123px
+
+  &__categories
+
+    margin-right: -15px
+    margin-left: -15px
+    flex-wrap: wrap
+
+  &__category
+    position: relative
+    margin-bottom: 18px
+    padding-right: 15px
+    padding-left: 15px
+    max-width: 25%
+    width: 100%
+
+  &__category_active
+    .catalog__category-link
+      border: 1px solid transparent
+      background-color: #4d6bef
+      +tr(all .3s ease)
+
+  &__category-link
+    border: 1px solid #ffffff
+    padding-top: 13px
+    padding-bottom: 13px
+    display: block
+    color: $white
+    font-size: 16px
+    font-weight: 500
+    text-align: center
+    text-decoration: none
+    white-space: nowrap
+    border-radius: 5px
+
+    &:hover
+      border: 1px solid transparent
+      background-color: #4d6bef
+      +tr(all .3s ease)
+
+
+
+
 

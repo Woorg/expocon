@@ -1,7 +1,11 @@
 import svg4everybody from 'svg4everybody';
-import levelsSlider from '../../blocks/levels/levels';
-import paymentSlider from '../../blocks/payment/payment';
-import faq from '../../blocks/faq/faq';
+import exhibitionSlider from '../../blocks/exhibition/exhibition';
+import aboutSlider from '../../blocks/about/about';
+
+
+// import levelsSlider from '../../blocks/levels/levels';
+// import paymentSlider from '../../blocks/payment/payment';
+// import faq from '../../blocks/faq/faq';
 
 
 // import $ from 'jquery';
@@ -47,24 +51,62 @@ import faq from '../../blocks/faq/faq';
   $(function() {
 
 
-    $('.popup-open').magnificPopup({
-      type: 'inline',
-      // closeBtnInside: true,
-      // closeOnContentClick: false,
-      // showCloseBtn: false
+    let $hButton = $('.h-user__button');
+    let $hList = $('.h-user__list');
+
+    $hButton.on('click', function () {
+      console.log('click');
+      $hList.toggleClass('h-user__list_active');
+
+
     });
+
+    $(document).on('click', function(e) {
+      if (!$(e.target).closest('.h-user__button').length) {
+        $hList.removeClass('h-user__list_active');
+      }
+    });
+
+
+    $('.catalog__category').on( 'click', function (e) {
+      e.preventDefault();
+      console.log(e);
+      let offsetLeft = e.pageX;
+      let offsetRight = (($('.catalog__bottom').outerWidth() - e.pageX) - 60);
+
+      console.log(offsetLeft);
+      console.log( $('.catalog__bottom').outerWidth() );
+
+      // $(this).prev().toggleClass('catalog__sub_active');
+
+      $(this).toggleClass('catalog__category_active');
+      $(this).siblings().removeClass('catalog__category_active');
+      $(this).prev('.catalog__sub').toggleClass('catalog__sub_active');
+      $(this).siblings().prev('.catalog__sub').removeClass('catalog__sub_active');
+
+      // $(this).find('.catalog__sub').css('left', (offsetLeft + 60) + 'px');
+
+      // if( ($('.catalog__bottom').outerWidth() / 2) < 585 ) {
+      //   $(this).find('.catalog__sub-triangle').css('right', + 'auto');
+      //   $(this).find('.catalog__sub-triangle').css('left', (offsetLeft) + 'px');
+
+      // } else {
+      //   $(this).find('.catalog__sub').css('left', 'auto');
+      //   $(this).find('.catalog__sub').css('right', (offsetRight) + 'px');
+      // }
+
+
+    });
+
+
+
 
 
     // Sliders
 
-    levelsSlider();
+    exhibitionSlider();
+    aboutSlider();
 
-    paymentSlider();
-
-
-    // faq
-
-    faq();
 
 
 

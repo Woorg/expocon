@@ -1,0 +1,41 @@
+.nav
+  &__list
+    justify-content: center
+    align-items: center
+  &__item
+    // margin-right: 55px
+
+    color: $white
+    font-size: 14px
+    font-family: $f
+    font-weight: 500
+    text-transform: uppercase
+
+    // &:last-child
+    //   margin-right: 0
+
+    &:hover
+      .nav__link
+        background-color: #4d6bef
+        border-radius: 3px
+        box-shadow: 4px 3px 26px 3px rgba(77, 107, 239, 0.81)
+        +tr(all .3s ease)
+  &__item_current
+    .nav__link
+      background-color: #4d6bef
+      border-radius: 3px
+      box-shadow: 4px 3px 26px 3px rgba(77, 107, 239, 0.81)
+      +tr(all .3s ease)
+
+  &__link
+    padding-top: 7px
+    padding-right: 20px
+    padding-left: 20px
+    padding-bottom: 5px
+    display: block
+    color: inherit
+    line-height: 1
+    white-space: nowrap
+    text-decoration: none
+    +tr(all .3s ease)
+
