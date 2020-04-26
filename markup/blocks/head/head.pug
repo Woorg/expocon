@@ -8,14 +8,17 @@ mixin head(data)
   meta(content="telephone=no", name="format-detection")
   //- meta(name="cmsmagazine" content="9b43fe137e637ba99fe3e2278ff612ec")
   meta(name="HandheldFriendly", content="true")
-  meta(name="msapplication-TileColor", content="#00aba9")
-  meta(name="theme-color", content="#ffffff")
 
-
+  link(rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png")
+  link(rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png")
+  link(rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png")
+  link(rel="manifest" href="site.webmanifest")
+  meta(name="msapplication-TileColor" content="#da532c")
+  meta(name="theme-color" content="#ffffff")
 
   |<link rel="preload" href="%=static=%css/main%=hash=%%=min=%.css" as="style">
   |<link href="%=static=%css/main%=hash=%%=min=%.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
-  |<link href="%=static=%css/separate-css/magnific-popup.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
+  //- |<link href="%=static=%css/separate-css/magnific-popup.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
   |<link href="%=static=%css/separate-css/slick.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
   |<link href="%=static=%css/separate-css/slick-theme.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
 

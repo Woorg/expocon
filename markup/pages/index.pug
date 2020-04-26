@@ -60,7 +60,7 @@ html(class="no-js", lang="ru")
     script(src="//api-maps.yandex.ru/2.1/?apikey=d491e610-d9d0-4022-9b4c-e2d184cf5425&lang=ru_RU")
     script(src='%=static=%js/separate-js/lazyload.min.js' defer)
     script(src='%=static=%js/separate-js/jquery.min.js' defer)
-    script(src='%=static=%js/separate-js/jquery.magnific-popup.min.js' defer)
+    //- script(src='%=static=%js/separate-js/jquery.magnific-popup.min.js' defer)
     script(src='%=static=%js/separate-js/slick.min.js' defer)
 
     script(src='%=static=%js/main%=hash=%%=min=%.js' defer)
@@ -72,7 +72,7 @@ html(class="no-js", lang="ru")
       function init() {
         var myMap = new ymaps.Map('map', {
           center: [55.720418, 37.772047],
-          zoom: 6,
+          zoom: 7,
           //- controls: ['']
         }, {
           searchControlProvider: ''
@@ -93,7 +93,7 @@ html(class="no-js", lang="ru")
         var myPlacemark = new ymaps.Placemark([55.755062, 37.617184],
         {
           city: 'Москва',
-          src: '/assets/images/content/catalog-company.png',
+          src: 'assets/images/content/catalog-company.png',
           alt: 'company name',
         }, {
           //- iconContentLayout: markerClass,

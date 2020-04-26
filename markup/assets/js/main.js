@@ -2,15 +2,12 @@ import svg4everybody from 'svg4everybody';
 import exhibitionSlider from '../../blocks/exhibition/exhibition';
 import aboutSlider from '../../blocks/about/about';
 
-
 // import levelsSlider from '../../blocks/levels/levels';
 // import paymentSlider from '../../blocks/payment/payment';
 // import faq from '../../blocks/faq/faq';
 
-
 // import $ from 'jquery';
 // import slick from 'slick-carousel';
-
 
 (function ($) {
 
@@ -38,8 +35,8 @@ import aboutSlider from '../../blocks/about/about';
 
   let lazyLoadInstance = new LazyLoad({
     elements_selector: '.lazy',
-    load_delay: 50,
-    use_native: false
+    // load_delay: 500,
+    use_native: true
   });
 
 
@@ -49,7 +46,6 @@ import aboutSlider from '../../blocks/about/about';
 
 
   $(function() {
-
 
     let $hButton = $('.h-user__button');
     let $hList = $('.h-user__list');
@@ -111,11 +107,7 @@ import aboutSlider from '../../blocks/about/about';
       //   $(this).find('.catalog__sub').css('right', (offsetRight) + 'px');
       // }
 
-
     });
-
-
-
 
 
     // Sliders

@@ -1,5 +1,31 @@
 module.exports = {
-    "postcss": [],
+    "postcss": [
+    {
+        "name": "postcss-animation",
+        "options": {
+
+        }
+
+    },
+    {
+        "name": "postcss-preset-env",
+        "options": {
+            "preset": "safe"
+        }
+    },
+    {
+        "name": "postcss-fixes",
+        "options": {
+
+        }
+    },
+    {
+        "name": "postcss-flexbugs-fixes",
+        "options": {
+
+        }
+    }
+    ],
     "svg": {
         "active": true,
         "workflow": "symbols",
@@ -17,7 +43,7 @@ module.exports = {
         "bundler": "webpack",
         "lint": false,
         "useBabel": true,
-        "removeConsoleLog": true,
+        "removeConsoleLog": false,
         "webpack": {
             "useHMR": false,
             "providePlugin": {}

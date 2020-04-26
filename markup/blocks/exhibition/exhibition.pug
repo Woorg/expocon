@@ -8,8 +8,11 @@ mixin exhibition(data)
             .exhibition__meta Дата: с 15.06 до 12.07.2020г.
             h2.exhibition__title Виртуальная выставка "Beauty Digital 2020
 
-          .exhibition__image
-            img(src!='assets/images/content/slider-image-1.png' alt='')
+          picture.exhibition__image
+            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/content/slider-image-1@2x.webp 2x, assets/images/content/slider-image-1.webp 1x')
+            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/content/slider-image-1@2x.png 2x, assets/images/content/slider-image-1.png 1x')
+
+            img.lazy(data-src='assets/images/content/slider-image-1.png' alt='')
 
           a.exhibition__more(href="#") Подробнее
             .exhibition__more-icon
@@ -19,20 +22,11 @@ mixin exhibition(data)
             .exhibition__meta Дата: с 15.06 до 12.07.2020г.
             h2.exhibition__title Виртуальная выставка "Beauty Digital 2020
 
-          .exhibition__image
-            img(src!='assets/images/content/slider-image-1.png' alt='')
+          picture.exhibition__image
+            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/content/slider-image-1@2x.webp 2x, assets/images/content/slider-image-1.webp 1x')
+            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/content/slider-image-1@2x.png 2x, assets/images/content/slider-image-1.png 1x')
 
-          a.exhibition__more(href="#") Подробнее
-            .exhibition__more-icon
-
-
-        .exhibition__item
-          .exhibition__top
-            .exhibition__meta Дата: с 15.06 до 12.07.2020г.
-            h2.exhibition__title Виртуальная выставка "Beauty Digital 2020
-
-          .exhibition__image
-            img(src!='assets/images/content/slider-image-1.png' alt='')
+            img.lazy(data-src='assets/images/content/slider-image-1.png' alt='')
 
           a.exhibition__more(href="#") Подробнее
             .exhibition__more-icon
@@ -43,14 +37,29 @@ mixin exhibition(data)
             .exhibition__meta Дата: с 15.06 до 12.07.2020г.
             h2.exhibition__title Виртуальная выставка "Beauty Digital 2020
 
-          .exhibition__image
-            img(src!='assets/images/content/slider-image-1.png' alt='')
+          picture.exhibition__image
+            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/content/slider-image-1@2x.webp 2x, assets/images/content/slider-image-1.webp 1x')
+            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/content/slider-image-1@2x.png 2x, assets/images/content/slider-image-1.png 1x')
+
+            img.lazy(data-src='assets/images/content/slider-image-1.png' alt='')
 
           a.exhibition__more(href="#") Подробнее
             .exhibition__more-icon
 
 
+        .exhibition__item
+          .exhibition__top
+            .exhibition__meta Дата: с 15.06 до 12.07.2020г.
+            h2.exhibition__title Виртуальная выставка "Beauty Digital 2020
 
+          picture.exhibition__image
+            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/content/slider-image-1@2x.webp 2x, assets/images/content/slider-image-1.webp 1x')
+            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/content/slider-image-1@2x.png 2x, assets/images/content/slider-image-1.png 1x')
+
+            img.lazy(data-src='assets/images/content/slider-image-1.png' alt='')
+
+          a.exhibition__more(href="#") Подробнее
+            .exhibition__more-icon
 
 
       .exhibition__thumbs

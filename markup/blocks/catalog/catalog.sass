@@ -146,17 +146,21 @@
 
     &:hover
       .catalog__item-entry
-        margin-top: -1px
-        margin-right: -1px
-        // margin-left: -1px
-        margin-bottom: -1px
+        position: relative
         border: 1px solid transparent
+        // margin-top: -1px
+        // margin-right: -1px
+        margin-left: -1px
+        // margin-bottom: -1px
         background-color: #4d6bef
         +tr(all .3s ease)
 
         +r($medium)
-          margin-bottom: 0
+          border: 1px solid transparent
+          border-width: 1px 1px 1px 1px
+          margin-top: -1px
           margin-right: 0
+          margin-bottom: 0
           margin-left: 0
 
   &__image
@@ -179,7 +183,7 @@
     border: 1px solid #ffffff
     border-width: 1px 1px 1px 0
     padding-top: 40px
-    padding-right: 20px
+    padding-right: 18px
     padding-left: 35px
     padding-bottom: 33px
     height: 100%
@@ -229,6 +233,7 @@
     +tr(all .3s ease)
     &:hover
       border-bottom: 1px solid transparent
+      border-width: 0
       +tr(all .3s ease)
 
 

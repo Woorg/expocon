@@ -3,35 +3,47 @@ mixin stats(data)
     .stats__container.container
       ul.stats__list.flex
         li.stats__item
-          .stats__icon
+          picture.stats__icon
+            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/stat-icon-1@2x.webp 2x, assets/images/general/stat-icon-1.webp 1x')
+            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/stat-icon-1@2x.png 2x, assets/images/general/stat-icon-1.png 1x')
             img.lazy(data-srcset="assets/images/general/stat-icon-1@2x.png 2x, assets/images/general/stat-icon-1.png 1x ", alt="")
+
           .stats__entry
             .stats__num 154+
             .stats__title Стенды
         li.stats__item
-          .stats__icon
+          picture.stats__icon
+            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/stat-icon-2@2x.webp 2x, assets/images/general/stat-icon-2.webp 1x')
+            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/stat-icon-2@2x.png 2x, assets/images/general/stat-icon-2.png 1x')
             img.lazy(data-srcset="assets/images/general/stat-icon-2@2x.png 2x, assets/images/general/stat-icon-2.png 1x ", alt="")
+
           .stats__entry
             .stats__num 1654+
             .stats__title Товары
 
         li.stats__item
-          .stats__icon
+          picture.stats__icon
+            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/stat-icon-3@2x.webp 2x, assets/images/general/stat-icon-3.webp 1x')
+            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/stat-icon-3@2x.png 2x, assets/images/general/stat-icon-3.png 1x')
             img.lazy(data-srcset="assets/images/general/stat-icon-3@2x.png 2x, assets/images/general/stat-icon-3.png 1x ", alt="")
           .stats__entry
             .stats__num 3000К+
             .stats__title Посетители
 
         li.stats__item
-          .stats__icon
-            img.lazy(data-srcset="assets/images/general/stat-icon-4@2x.png 2x, assets/images/general/stat-icon-4.png 1x", alt="")
+          picture.stats__icon
+            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/stat-icon-4@2x.webp 2x, assets/images/general/stat-icon-4.webp 1x')
+            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/stat-icon-4@2x.png 2x, assets/images/general/stat-icon-4.png 1x')
+            img.lazy(data-srcset="assets/images/general/stat-icon-4@2x.png 2x, assets/images/general/stat-icon-4.png 1x ", alt="")
           .stats__entry
             .stats__num 12+
             .stats__title Страны
 
         li.stats__item
-          .stats__icon
-            img.lazy(data-srcset="assets/images/general/stat-icon-5@2x.png 2x, assets/images/general/stat-icon-5.png 1x ", alt="")
+          picture.stats__icon
+            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/stat-icon-5@2x.webp 2x, assets/images/general/stat-icon-5.webp 1x')
+            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/stat-icon-5@2x.png 2x, assets/images/general/stat-icon-5.png 1x')
+            img.lazy(data-srcset="assets/images/general/stat-icon-1@2x.png 2x, assets/images/general/stat-5con-1.png 1x ", alt="")
           .stats__entry
             .stats__num 29+
             .stats__title Спикеры

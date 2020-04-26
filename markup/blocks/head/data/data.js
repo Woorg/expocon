@@ -1,7 +1,6 @@
 head: {
     defaults: {
         title: 'Main page',
-        useSocialMetaTags: false
     },
     // inner: {
     //     title: 'Inner page',

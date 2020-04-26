@@ -3,7 +3,11 @@ mixin header(data)
     .header__container.container
       .header__top.flex
         a.logo.header__logo(href="#")
-          img.logo__image.lazy(data-src="assets/images/general/logo@2x.png", alt="logo Expocon")
+          picture.logo__image
+            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/logo@2x.webp 2x, assets/images/general/logo.webp 1x')
+            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/logo@2x.png 2x, assets/images/general/logo.png 1x')
+
+            img.lazy(data-src="assets/images/general/logo@2x.png", alt="logo Expocon")
 
         nav.header__nav.nav
 

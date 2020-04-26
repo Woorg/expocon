@@ -29,7 +29,8 @@
       max-width: 33%
 
     +r($small)
-      max-width: 50%
+      max-width: 100%
+      text-align: center
 
     &:after
       position: absolute
@@ -60,9 +61,19 @@
         &:after
           display: none
 
+    &:nth-child(1n)
+      +r($small)
+        &:after
+          display: none
+
+  &__icon
+    +r($small)
+      display: none
 
   &__entry
     margin-left: 30px
+    +r($small)
+      margin-left: 0
 
 
   &__title

@@ -10,11 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="telephone=no" name="format-detection">
     <meta name="HandheldFriendly" content="true">
-    <meta name="msapplication-TileColor" content="#00aba9">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="preload" href="assets/css/mainchnlbe.min.css" as="style">
-    <link href="assets/css/mainchnlbe.min.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
-    <link href="assets/css/separate-css/magnific-popup.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
+    <link rel="preload" href="assets/css/main3ain8j.min.css" as="style">
+    <link href="assets/css/main3ain8j.min.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
     <link href="assets/css/separate-css/slick.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
     <link href="assets/css/separate-css/slick-theme.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
     <meta property="og:title" content="#{data.title}">
@@ -46,7 +49,11 @@
         <div class="header__container container">
           <div class="header__top flex">
             <a class="logo header__logo" href="#">
-              <img class="logo__image lazy" data-src="assets/images/general/logo@2x.png" alt="logo Expocon">
+              <picture class="logo__image">
+                <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/general/logo@2x.webp 2x, assets/images/general/logo.webp 1x">
+                  <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/general/logo@2x.png 2x, assets/images/general/logo.png 1x">
+                    <img class="lazy" data-src="assets/images/general/logo@2x.png" alt="logo Expocon">
+              </picture>
             </a>
             <nav class="header__nav nav">
               <svg class="nav__button" width="24px" height="18px">
@@ -100,9 +107,11 @@
                   <div class="exhibition__meta">Дата: с 15.06 до 12.07.2020г.</div>
                   <h2 class="exhibition__title">Виртуальная выставка "Beauty Digital 2020</h2>
                 </div>
-                <div class="exhibition__image">
-                  <img src="assets/images/content/slider-image-1.png" alt="">
-                </div><a class="exhibition__more" href="#">Подробнее
+                <picture class="exhibition__image">
+                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/slider-image-1@2x.webp 2x, assets/images/content/slider-image-1.webp 1x">
+                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/slider-image-1@2x.png 2x, assets/images/content/slider-image-1.png 1x">
+                      <img class="lazy" data-src="assets/images/content/slider-image-1.png" alt="">
+                </picture><a class="exhibition__more" href="#">Подробнее
                     <div class="exhibition__more-icon"></div></a>
               </div>
               <div class="exhibition__item">
@@ -110,9 +119,11 @@
                   <div class="exhibition__meta">Дата: с 15.06 до 12.07.2020г.</div>
                   <h2 class="exhibition__title">Виртуальная выставка "Beauty Digital 2020</h2>
                 </div>
-                <div class="exhibition__image">
-                  <img src="assets/images/content/slider-image-1.png" alt="">
-                </div><a class="exhibition__more" href="#">Подробнее
+                <picture class="exhibition__image">
+                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/slider-image-1@2x.webp 2x, assets/images/content/slider-image-1.webp 1x">
+                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/slider-image-1@2x.png 2x, assets/images/content/slider-image-1.png 1x">
+                      <img class="lazy" data-src="assets/images/content/slider-image-1.png" alt="">
+                </picture><a class="exhibition__more" href="#">Подробнее
                     <div class="exhibition__more-icon"></div></a>
               </div>
               <div class="exhibition__item">
@@ -120,9 +131,11 @@
                   <div class="exhibition__meta">Дата: с 15.06 до 12.07.2020г.</div>
                   <h2 class="exhibition__title">Виртуальная выставка "Beauty Digital 2020</h2>
                 </div>
-                <div class="exhibition__image">
-                  <img src="assets/images/content/slider-image-1.png" alt="">
-                </div><a class="exhibition__more" href="#">Подробнее
+                <picture class="exhibition__image">
+                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/slider-image-1@2x.webp 2x, assets/images/content/slider-image-1.webp 1x">
+                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/slider-image-1@2x.png 2x, assets/images/content/slider-image-1.png 1x">
+                      <img class="lazy" data-src="assets/images/content/slider-image-1.png" alt="">
+                </picture><a class="exhibition__more" href="#">Подробнее
                     <div class="exhibition__more-icon"></div></a>
               </div>
               <div class="exhibition__item">
@@ -130,9 +143,11 @@
                   <div class="exhibition__meta">Дата: с 15.06 до 12.07.2020г.</div>
                   <h2 class="exhibition__title">Виртуальная выставка "Beauty Digital 2020</h2>
                 </div>
-                <div class="exhibition__image">
-                  <img src="assets/images/content/slider-image-1.png" alt="">
-                </div><a class="exhibition__more" href="#">Подробнее
+                <picture class="exhibition__image">
+                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/slider-image-1@2x.webp 2x, assets/images/content/slider-image-1.webp 1x">
+                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/slider-image-1@2x.png 2x, assets/images/content/slider-image-1.png 1x">
+                      <img class="lazy" data-src="assets/images/content/slider-image-1.png" alt="">
+                </picture><a class="exhibition__more" href="#">Подробнее
                     <div class="exhibition__more-icon"></div></a>
               </div>
             </div>
@@ -167,6 +182,7 @@
         </div>
         <div class="about">
           <div class="about__container container">
+            <div class="about__bg lazy" data-bg="url(assets/images/general/planet-bg.png)"></div>
             <div class="about__slider">
               <div class="about__item">
                 <div class="about__item-w flex">
@@ -180,9 +196,11 @@
                         sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
                     </div><a class="about__more button" href="#">Войти на выставку</a>
                   </div>
-                  <div class="about__image">
-                    <img class="lazy" data-src="assets/images/content/about-image.jpg" alt="">
-                  </div>
+                  <picture class="about__image">
+                    <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/about-image@2x.webp 2x, assets/images/content/about-image.webp 1x">
+                      <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/about-image@2x.jpg 2x, assets/images/content/about-image.jpg 1x">
+                        <img class="lazy" data-src="assets/images/content/about-image.jpg" alt="">
+                  </picture>
                 </div>
               </div>
               <div class="about__item">
@@ -197,9 +215,11 @@
                         sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
                     </div><a class="about__more button" href="#">Войти на выставку</a>
                   </div>
-                  <div class="about__image">
-                    <img class="lazy" data-src="assets/images/content/about-image.jpg" alt="">
-                  </div>
+                  <picture class="about__image">
+                    <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/about-image@2x.webp 2x, assets/images/content/about-image.webp 1x">
+                      <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/about-image@2x.jpg 2x, assets/images/content/about-image.jpg 1x">
+                        <img class="lazy" data-src="assets/images/content/about-image.jpg" alt="">
+                  </picture>
                 </div>
               </div>
             </div>
@@ -213,45 +233,55 @@
           <div class="stats__container container">
             <ul class="stats__list flex">
               <li class="stats__item">
-                <div class="stats__icon">
-                  <img class="lazy" data-srcset="assets/images/general/stat-icon-1@2x.png 2x, assets/images/general/stat-icon-1.png 1x " alt="">
-                </div>
+                <picture class="stats__icon">
+                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/general/stat-icon-1@2x.webp 2x, assets/images/general/stat-icon-1.webp 1x">
+                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/general/stat-icon-1@2x.png 2x, assets/images/general/stat-icon-1.png 1x">
+                      <img class="lazy" data-srcset="assets/images/general/stat-icon-1@2x.png 2x, assets/images/general/stat-icon-1.png 1x " alt="">
+                </picture>
                 <div class="stats__entry">
                   <div class="stats__num">154+</div>
                   <div class="stats__title">Стенды</div>
                 </div>
               </li>
               <li class="stats__item">
-                <div class="stats__icon">
-                  <img class="lazy" data-srcset="assets/images/general/stat-icon-2@2x.png 2x, assets/images/general/stat-icon-2.png 1x " alt="">
-                </div>
+                <picture class="stats__icon">
+                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/general/stat-icon-2@2x.webp 2x, assets/images/general/stat-icon-2.webp 1x">
+                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/general/stat-icon-2@2x.png 2x, assets/images/general/stat-icon-2.png 1x">
+                      <img class="lazy" data-srcset="assets/images/general/stat-icon-2@2x.png 2x, assets/images/general/stat-icon-2.png 1x " alt="">
+                </picture>
                 <div class="stats__entry">
                   <div class="stats__num">1654+</div>
                   <div class="stats__title">Товары</div>
                 </div>
               </li>
               <li class="stats__item">
-                <div class="stats__icon">
-                  <img class="lazy" data-srcset="assets/images/general/stat-icon-3@2x.png 2x, assets/images/general/stat-icon-3.png 1x " alt="">
-                </div>
+                <picture class="stats__icon">
+                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/general/stat-icon-3@2x.webp 2x, assets/images/general/stat-icon-3.webp 1x">
+                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/general/stat-icon-3@2x.png 2x, assets/images/general/stat-icon-3.png 1x">
+                      <img class="lazy" data-srcset="assets/images/general/stat-icon-3@2x.png 2x, assets/images/general/stat-icon-3.png 1x " alt="">
+                </picture>
                 <div class="stats__entry">
                   <div class="stats__num">3000К+</div>
                   <div class="stats__title">Посетители</div>
                 </div>
               </li>
               <li class="stats__item">
-                <div class="stats__icon">
-                  <img class="lazy" data-srcset="assets/images/general/stat-icon-4@2x.png 2x, assets/images/general/stat-icon-4.png 1x" alt="">
-                </div>
+                <picture class="stats__icon">
+                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/general/stat-icon-4@2x.webp 2x, assets/images/general/stat-icon-4.webp 1x">
+                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/general/stat-icon-4@2x.png 2x, assets/images/general/stat-icon-4.png 1x">
+                      <img class="lazy" data-srcset="assets/images/general/stat-icon-4@2x.png 2x, assets/images/general/stat-icon-4.png 1x " alt="">
+                </picture>
                 <div class="stats__entry">
                   <div class="stats__num">12+</div>
                   <div class="stats__title">Страны</div>
                 </div>
               </li>
               <li class="stats__item">
-                <div class="stats__icon">
-                  <img class="lazy" data-srcset="assets/images/general/stat-icon-5@2x.png 2x, assets/images/general/stat-icon-5.png 1x " alt="">
-                </div>
+                <picture class="stats__icon">
+                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/general/stat-icon-5@2x.webp 2x, assets/images/general/stat-icon-5.webp 1x">
+                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/general/stat-icon-5@2x.png 2x, assets/images/general/stat-icon-5.png 1x">
+                      <img class="lazy" data-srcset="assets/images/general/stat-icon-1@2x.png 2x, assets/images/general/stat-5con-1.png 1x " alt="">
+                </picture>
                 <div class="stats__entry">
                   <div class="stats__num">29+</div>
                   <div class="stats__title">Спикеры</div>
@@ -267,9 +297,11 @@
             <div class="catalog__top">
               <div class="catalog__items flex">
                 <a class="catalog__item" href="#">
-                  <div class="catalog__image">
-                    <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
-                  </div>
+                  <picture class="catalog__image">
+                    <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                      <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                        <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                  </picture>
                   <div class="catalog__item-entry">
                     <div class="catalog__item-title">Завод Melsitech</div>
                     <div class="catalog__item-country">Россия</div>
@@ -277,9 +309,11 @@
                   </div>
                 </a>
                 <a class="catalog__item" href="#">
-                  <div class="catalog__image">
-                    <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
-                  </div>
+                  <picture class="catalog__image">
+                    <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                      <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                        <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                  </picture>
                   <div class="catalog__item-entry">
                     <div class="catalog__item-title">Завод Melsitech</div>
                     <div class="catalog__item-country">Россия</div>
@@ -287,9 +321,11 @@
                   </div>
                 </a>
                 <a class="catalog__item" href="#">
-                  <div class="catalog__image">
-                    <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
-                  </div>
+                  <picture class="catalog__image">
+                    <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                      <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                        <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                  </picture>
                   <div class="catalog__item-entry">
                     <div class="catalog__item-title">Завод Melsitech</div>
                     <div class="catalog__item-country">Россия</div>
@@ -297,9 +333,11 @@
                   </div>
                 </a>
                 <a class="catalog__item" href="#">
-                  <div class="catalog__image">
-                    <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
-                  </div>
+                  <picture class="catalog__image">
+                    <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                      <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                        <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                  </picture>
                   <div class="catalog__item-entry">
                     <div class="catalog__item-title">Завод Melsitech</div>
                     <div class="catalog__item-country">Россия</div>
@@ -307,9 +345,11 @@
                   </div>
                 </a>
                 <a class="catalog__item" href="#">
-                  <div class="catalog__image">
-                    <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
-                  </div>
+                  <picture class="catalog__image">
+                    <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                      <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                        <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                  </picture>
                   <div class="catalog__item-entry">
                     <div class="catalog__item-title">Завод Melsitech</div>
                     <div class="catalog__item-country">Россия</div>
@@ -317,9 +357,11 @@
                   </div>
                 </a>
                 <a class="catalog__item" href="#">
-                  <div class="catalog__image">
-                    <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
-                  </div>
+                  <picture class="catalog__image">
+                    <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                      <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                        <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                  </picture>
                   <div class="catalog__item-entry">
                     <div class="catalog__item-title">Завод Melsitech</div>
                     <div class="catalog__item-country">Россия</div>
@@ -334,33 +376,41 @@
                   <div class="catalog__sub-triangle"></div>
                   <div class="catalog__items catalog__items_sub flex">
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
@@ -373,33 +423,41 @@
                   <div class="catalog__sub-triangle"></div>
                   <div class="catalog__items catalog__items_sub flex">
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
@@ -412,33 +470,41 @@
                   <div class="catalog__sub-triangle"></div>
                   <div class="catalog__items catalog__items_sub flex">
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img class="lazy" dat-src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
@@ -451,33 +517,41 @@
                   <div class="catalog__sub-triangle"></div>
                   <div class="catalog__items catalog__items_sub flex">
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
@@ -490,33 +564,41 @@
                   <div class="catalog__sub-triangle"></div>
                   <div class="catalog__items catalog__items_sub flex">
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
@@ -529,33 +611,41 @@
                   <div class="catalog__sub-triangle"></div>
                   <div class="catalog__items catalog__items_sub flex">
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
@@ -568,33 +658,41 @@
                   <div class="catalog__sub-triangle"></div>
                   <div class="catalog__items catalog__items_sub flex">
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
@@ -607,33 +705,41 @@
                   <div class="catalog__sub-triangle"></div>
                   <div class="catalog__items catalog__items_sub flex">
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
@@ -646,33 +752,41 @@
                   <div class="catalog__sub-triangle"></div>
                   <div class="catalog__items catalog__items_sub flex">
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
@@ -685,33 +799,41 @@
                   <div class="catalog__sub-triangle"></div>
                   <div class="catalog__items catalog__items_sub flex">
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
@@ -724,33 +846,41 @@
                   <div class="catalog__sub-triangle"></div>
                   <div class="catalog__items catalog__items_sub flex">
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
@@ -763,33 +893,41 @@
                   <div class="catalog__sub-triangle"></div>
                   <div class="catalog__items catalog__items_sub flex">
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
@@ -802,33 +940,41 @@
                   <div class="catalog__sub-triangle"></div>
                   <div class="catalog__items catalog__items_sub flex">
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
@@ -841,33 +987,41 @@
                   <div class="catalog__sub-triangle"></div>
                   <div class="catalog__items catalog__items_sub flex">
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
@@ -880,33 +1034,41 @@
                   <div class="catalog__sub-triangle"></div>
                   <div class="catalog__items catalog__items_sub flex">
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
@@ -919,33 +1081,41 @@
                   <div class="catalog__sub-triangle"></div>
                   <div class="catalog__items catalog__items_sub flex">
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
                     </a>
                     <a class="catalog__item" href="#">
-                      <div class="catalog__image">
-                        <img src="assets/images/content/catalog-company.png" alt="">
-                      </div>
+                      <picture class="catalog__image">
+                        <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x">
+                          <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x">
+                            <img class="lazy" data-src="assets/images/content/catalog-company.png" alt="">
+                      </picture>
                       <div class="catalog__item-entry">
                         <div class="catalog__item-title">Завод Melsitech</div>
                       </div>
@@ -970,7 +1140,11 @@
       <footer class="footer">
         <div class="footer__container container flex">
           <a class="footer__logo logo" href="#">
-            <img class="logo__image lazy" data-src="assets/images/general/logo@2x.png" alt="logo Expocon">
+            <picture class="logo__image">
+              <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/general/logo@2x.webp 2x, assets/images/general/logo.webp 1x">
+                <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/general/logo@2x.png 2x, assets/images/general/logo.png 1x">
+                  <img class="lazy" data-src="assets/images/general/logo@2x.png" alt="logo Expocon">
+            </picture>
           </a>
           <div class="footer__links"><a class="footer__link" href="#">Написать нам</a><a class="footer__link" href="#">Пользовательское соглашение</a><a class="footer__link" href="#">Политика конфиденциальности</a>
           </div>
@@ -990,31 +1164,53 @@
             <div class="footer__payment payment flex">
               <div class="payment__text">Способы оплаты:</div>
               <div class="payment__w flex">
-                <div class="payment__variant">
-                  <img class="lazy" data-src="assets/images/general/visa.png" alt="">
-                </div>
-                <div class="payment__variant">
-                  <img class="lazy" data-src="assets/images/general/master.png" alt="">
-                </div>
-                <div class="payment__variant">
-                  <img class="lazy" data-src="assets/images/general/mir.png" alt="">
-                </div>
+                <picture class="payment__variant payment__variant_1">
+                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/general/visa@2x.webp 2x, assets/images/general/visa.webp 1x">
+                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/general/visa@2x.png 2x, assets/images/general/visa.png 1x">
+                      <img class="lazy" data-src="assets/images/general/visa.png" alt="">
+                </picture>
+                <picture class="payment__variant payment__variant_2">
+                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/general/master@2x.webp 2x, assets/images/general/master.webp 1x">
+                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/general/master@2x.png 2x, assets/images/general/master.png 1x">
+                      <img class="lazy" data-src="assets/images/general/master.png" alt="">
+                </picture>
+                <picture class="payment__variant payment__variant_3">
+                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/general/mir@2x.webp 2x, assets/images/general/mir.webp 1x">
+                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/general/mir@2x.png 2x, assets/images/general/mir.png 1x">
+                      <img class="lazy" data-src="assets/images/general/mir.png" alt="">
+                </picture>
               </div>
             </div>
           </div>
           <div class="footer__contacts"><a class="footer__contact" href="tel:+70000000000">8 000 000 00 00</a><a class="footer__contact" href="mailto:jgfkglvu@mail.ru">jgfkglvu@mail.ru</a>
             <div class="footer__social social flex">
               <a class="social__link" href="">
-                <img src="assets/images/general/social-1.png" alt="">
+                <picture>
+                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/general/social-1@2x.webp 2x, assets/images/general/social-1.webp 1x">
+                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/general/social-1@2x.png 2x, assets/images/general/social-1.png 1x">
+                      <img class="lazy" data-src="assets/images/general/social-1.png" alt="">
+                </picture>
               </a>
               <a class="social__link" href="">
-                <img src="assets/images/general/social-2.png" alt="">
+                <picture>
+                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/general/social-2@2x.webp 2x, assets/images/general/social-2.webp 1x">
+                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/general/social-2@2x.png 2x, assets/images/general/social-2.png 1x">
+                      <img class="lazy" data-src="assets/images/general/social-2.png" alt="">
+                </picture>
               </a>
               <a class="social__link" href="">
-                <img src="assets/images/general/social-3.png" alt="">
+                <picture>
+                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/general/social-3@2x.webp 2x, assets/images/general/social-3.webp 1x">
+                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/general/social-3@2x.png 2x, assets/images/general/social-3.png 1x">
+                      <img class="lazy" data-src="assets/images/general/social-3.png" alt="">
+                </picture>
               </a>
               <a class="social__link" href="">
-                <img src="assets/images/general/social-4.png" alt="">
+                <picture>
+                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/general/social-4@2x.webp 2x, assets/images/general/social-4.webp 1x">
+                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/general/social-4@2x.png 2x, assets/images/general/social-4.png 1x">
+                      <img class="lazy" data-src="assets/images/general/social-4.png" alt="">
+                </picture>
               </a>
             </div>
           </div>
@@ -1024,16 +1220,15 @@
     <script src="//api-maps.yandex.ru/2.1/?apikey=d491e610-d9d0-4022-9b4c-e2d184cf5425&amp;lang=ru_RU"></script>
     <script src="assets/js/separate-js/lazyload.min.js" defer></script>
     <script src="assets/js/separate-js/jquery.min.js" defer></script>
-    <script src="assets/js/separate-js/jquery.magnific-popup.min.js" defer></script>
     <script src="assets/js/separate-js/slick.min.js" defer></script>
-    <script src="assets/js/mainchnlbe.min.js" defer></script>
+    <script src="assets/js/main3ain8j.min.js" defer></script>
     <script>
       ymaps.ready(init);
       
       function init() {
         var myMap = new ymaps.Map('map', {
           center: [55.720418, 37.772047],
-          zoom: 6,
+          zoom: 7,
           //- controls: ['']
         }, {
           searchControlProvider: ''
@@ -1054,7 +1249,7 @@
         var myPlacemark = new ymaps.Placemark([55.755062, 37.617184],
         {
           city: 'Москва',
-          src: '/assets/images/content/catalog-company.png',
+          src: 'assets/images/content/catalog-company.png',
           alt: 'company name',
         }, {
           //- iconContentLayout: markerClass,
