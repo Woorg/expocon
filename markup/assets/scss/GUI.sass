@@ -18,14 +18,15 @@
   font-weight: 500
   line-height: 1.285
   +r($medium)
-    font-size: 25
+    font-size: 25px
+
 
 .button
   +resetbutton()
   border: 1px solid #ffffff
-  padding-top: 8px
+  padding-top: 6px
   padding-right: 20px
-  padding-bottom: 9px
+  padding-bottom: 6px
   padding-left: 20px
   height: 33px
   display: inline-block
@@ -44,6 +45,32 @@
     border: 1px solid darken(#ffffff, 10)
     +tr(all .3s ease)
 
+  &_theme_form
+    border: none
+    height: 54px
+    background-color: #4c6aef
+    color: #ffffff
+    font-size: 18px
+    text-align: center
+    border-radius: 5px
+    box-shadow: 3.9px 3.1px 26.2px 5.8px rgba(67, 92, 203, 0.77)
+    +r($medium)
+      height: 40px
+
+    &:hover
+      border: none
+      box-shadow: none
+      +tr(all .3s ease)
+
+  &_theme_third
+    border: none
+    padding-top: 8px
+    padding-right: 20px
+    padding-left: 12px
+    background-color: #4d6bef
+    &:hover
+      border: none
+      box-shadow: none
 
 
 .wysiwyg

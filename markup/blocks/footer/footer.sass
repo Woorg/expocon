@@ -5,8 +5,25 @@
   &__container
     padding-top: 46px
     padding-bottom: 46px
+    justify-content: space-between
     +r($medium)
       flex-wrap: wrap
+
+
+  &__col
+    max-width: 170px
+    width: 100%
+
+  &__col_main
+    max-width: 570px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    +r($medium)
+      margin-top: 30px
+      margin-bottom: 30px
+      max-width: 100%
 
   &__logo
     margin-top: 40px
@@ -69,6 +86,13 @@
     +r($large)
       padding-left: 0
 
+  &__contacts_secondary
+    margin-top: 30px
+    margin-bottom: 0
+    padding-left: 0
+    +r($medium)
+      text-align: center
+
   &__contact
     margin-bottom: 23px
     display: block
@@ -85,6 +109,41 @@
       +tr(all .3s ease)
 
   // &__social
+
+.footer_theme_secondary
+  .footer__container
+    padding-top: 36px
+    padding-bottom: 30px
+    align-items: flex-start
+    +r($medium)
+      justify-content: center
+  .footer__nav
+    padding-left: 50px
+    max-width: 100%
+    +r($medium)
+      padding-left: 0
+  .footer__payment
+    margin-top: 0
+
+  .footer__links
+    margin-bottom: 27px
+    padding-top: 33px
+    padding-left: 0
+    max-width: 100%
+    justify-content: center
+
+    +r($medium)
+      order: 0
+      flex-wrap: wrap
+      text-align: center
+
+  .footer__link
+    margin-right: 20px
+    +r($medium)
+      width: 100%
+      margin-right: 0
+    &:last-child
+      margin-right: 0
 
 
 .social
@@ -120,5 +179,13 @@
 
   &__variant_3
     width: 54px
+
+.payment_secondary
+  flex-direction: column
+  align-items: flex-end
+  +r($medium)
+    align-items: center
+  .payment__text
+    margin-bottom: 15px
 
 

@@ -1,0 +1,99 @@
+.program
+  &__container
+    padding-top: 50px
+    padding-bottom: 86px
+    +r($medium)
+      padding-bottom: (86px / 2)
+
+  &__row
+    align-items: flex-start
+    +r($medium)
+      flex-wrap: wrap
+
+  &__entry
+    max-width: 50%
+    width: 100%
+    +r($medium)
+      max-width: 100%
+
+  &__title
+    margin-bottom: 50px
+
+  // &__list
+
+  &__item
+    margin-bottom: 20px
+
+  &__term
+    margin-bottom: 15px
+    padding-top: 9px
+    padding-bottom: 9px
+    padding-right: 30px
+    padding-left: 26px
+    display: inline-block
+    vertical-align: top
+    font-size: 18px
+    font-weight: 500
+    line-height: 1.33
+    background-color: #4d6bef
+    border-radius: 3px
+
+  &__desc
+    font-family: $fL
+    font-size: 14px
+    font-weight: 300
+    line-height: 1.35
+
+  &__form
+    margin-top: 10px
+    margin-left: auto
+    padding-top: 50px
+    width: 535px
+
+    background-color: #4d6bef
+    text-align: center
+    border-radius: 10px
+    box-shadow: 3.9px 3.1px 25.8px 3.2px rgba(77, 107, 239, 0.81)
+    +r($medium)
+      padding-top: (50px / 2)
+      width: 100%
+
+  &__form-title
+    margin-bottom: 43px
+    +r($medium)
+      margin-bottom: (43px / 2)
+  &__form-w
+    margin: auto
+    padding-right: 20px
+    padding-left: 20px
+    padding-bottom: 40px
+    max-width: 438px
+    width: 100%
+    text-align: left
+    +r($medium)
+      padding-bottom: (40px / 2)
+      max-width: 100%
+
+
+  &__form-note
+    border-top: 1px solid rgba(255,255,255, .29)
+    padding-top: 30px
+    padding-right: 20px
+    padding-bottom: 50px
+    padding-left: 20px
+    text-align: center
+    +r($medium)
+      padding-top: 13px
+      padding-bottom: 10px
+
+
+
+  &__note
+    margin-right: -10px
+    margin-left: -10px
+    font-family: $fL
+    font-size: 16px
+    line-height: 1.5
+    +r($medium)
+      font-size: 14px
+      line-height: 1.2

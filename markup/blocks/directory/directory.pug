@@ -1,0 +1,25 @@
+mixin directory(data)
+  .directory
+    .directory__container.container
+      nav.directory__nav
+        ul.directory__list.flex
+          li.directory__item.directory__item_active
+            a.directory__link.flex(href="#")
+              != pugHelpers.Icon.call(locals, {iconName: 'section-icon-1', className: 'directory__icon', iconWidth: '40', iconHeight: '40'})
+              | Спикеры
+
+          li.directory__item
+            a.directory__link.flex(href="#")
+              != pugHelpers.Icon.call(locals, {iconName: 'section-icon-2', className: 'directory__icon' , iconWidth: '30', iconHeight: '30'})
+              | Экспоненты
+
+          li.directory__item
+            a.directory__link.flex(href="#")
+              != pugHelpers.Icon.call(locals, {iconName: 'section-icon-3', className: 'directory__icon' , iconWidth: '24', iconHeight: '30'})
+              | Программа
+
+          li.directory__item
+            a.directory__link.flex(href="#")
+              != pugHelpers.Icon.call(locals, {iconName: 'section-icon-4', className: 'directory__icon' , iconWidth: '28', iconHeight: '30'})
+              | О выставке
+

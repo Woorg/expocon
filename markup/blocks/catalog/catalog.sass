@@ -150,7 +150,7 @@
         border: 1px solid transparent
         // margin-top: -1px
         // margin-right: -1px
-        margin-left: -1px
+        // margin-left: -1px
         // margin-bottom: -1px
         background-color: #4d6bef
         +tr(all .3s ease)
@@ -158,10 +158,22 @@
         +r($medium)
           border: 1px solid transparent
           border-width: 1px 1px 1px 1px
-          margin-top: -1px
-          margin-right: 0
-          margin-bottom: 0
-          margin-left: 0
+          // margin-top: -1px
+          // margin-right: 0
+          // margin-bottom: 0
+          // margin-left: 0
+
+  &__item_active
+    .catalog__item-entry
+      position: relative
+      border: 1px solid transparent
+      // margin-top: -1px
+      // margin-right: -1px
+      // margin-left: -1px
+      // margin-bottom: -1px
+      background-color: #4d6bef
+      +tr(all .3s ease)
+
 
   &__image
     padding-left: 8px
@@ -181,7 +193,7 @@
 
   &__item-entry
     border: 1px solid #ffffff
-    border-width: 1px 1px 1px 0
+    // border-width: 1px 1px 1px 0
     padding-top: 40px
     padding-right: 18px
     padding-left: 35px
@@ -198,7 +210,7 @@
     +tr(all .3s ease)
 
     +r($medium)
-      border-width: 0 1px 1px 1px
+      // border-width: 0 1px 1px 1px
       padding-top: 15px
       padding-right: 15px
       padding-bottom: 15px
@@ -222,17 +234,17 @@
 
 
   &__more
-    border-bottom: 1px solid $white
-    margin-top: 32px
+    margin-top: 28px
     padding-bottom: 1px
     display: inline-block
     vertical-align: top
     font-size: 18px
     color: inherit
     text-decoration: none
+    box-shadow: inset 0 -1px 0 $white
     +tr(all .3s ease)
     &:hover
-      border-bottom: 1px solid transparent
+      box-shadow: none
       border-width: 0
       +tr(all .3s ease)
 
@@ -293,3 +305,21 @@
 
 
 
+.catalog_secondary
+  padding-bottom: 50px
+  +r($medium)
+    padding-bottom: (50px / 2)
+
+  .catalog__container
+    padding-bottom: 86px
+    +r($medium)
+      padding-bottom: (86px / 2)
+    &:after
+      position: absolute
+      z-index: -1
+      top: 0
+      left: -30px
+      right: -30px
+      bottom: 0
+      content: ''
+      background-color: rgba(0, 0, 0, .3)

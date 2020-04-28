@@ -15,6 +15,7 @@ module.exports = function aboutSlider () {
         speed: 300,
         focusOnSelect: true,
         waitForAnimate: false,
+        adaptiveHeight: false,
         // arrows: false,
         // appendDots: $('.exhibition__dots'),
         prevArrow: '.about__nav-arrow_back',

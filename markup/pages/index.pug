@@ -28,10 +28,10 @@ html(class="no-js", lang="ru")
 
   head
     +head(head.defaults)
-  body.page.lazy(data-bg='url(assets/images/general/bg.jpg)')
+  body.page.lazy(data-bg='url(assets/images/general/bg-2.jpg)')
+    +header()
     |%=symbols=%
     .page__inner
-      +header()
       main.page__main.main
         +exhibition()
         +about()

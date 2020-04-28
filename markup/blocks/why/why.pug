@@ -1,26 +1,20 @@
 mixin why(data)
-  .why
+  section.why
     .why__container.container
-      ul.why__list.flex
+      .why__row.flex
+        .why__entry
+          h2.why__title.title Почему стоит посетить выставку?
+          ul.why__list
+            li.why__item Сравните максимум вариантов и найдите для себя оптимальное решение,
+            li.why__item Общайтесь с экспертами и получите ответы на волнующие вопросы,
+            li.why__item Узнайте о тенденциях и разработках в мире косметологии,
+            li.why__item Вдохновитесь на новые идеи и цели.
 
-        li.why__item.flex
-          .why__image
-            img.lazy(data-src="assets/images/content/why-1.png", alt="")
-          .why__entry
-            h2.why__title Проверено Google Play и AppStore
-            .why__text Приложение размещено в крупнейших сторах и прошло строгую проверку безопасности
+          a.why__button.button.button_theme_third(href="#") Зарегистрироваться
 
-        li.why__item.flex
-          .why__image
-            img.lazy(data-src="assets/images/content/why-2.png", alt="")
-          .why__entry
-            h2.why__title Работает без интернета
-            .why__text Приложение не связывается с сервером и работает без интернета всегда и везде
+        .why__image
+          picture
+            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/why-image@2x.webp 2x, assets/images/general/why-image.webp 1x')
+            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/why-image@2x.png 2x, assets/images/general/why-image.png 1x')
 
-        li.why__item.flex
-          .why__image
-            img.lazy(data-src="assets/images/content/why-3.png", alt="")
-          .why__entry
-            h2.why__title Деньги в руках игроков
-            .why__text Не нужно пополнять и выводить, получайте оплату напрямую от игроков на карту или наличными
-
+            img.lazy(data-srcset='assets/images/general/why-image@2x.png 2x, assets/images/general/why-image.png 1x' alt="")

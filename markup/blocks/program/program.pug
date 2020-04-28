@@ -1,0 +1,53 @@
+mixin program(data)
+  .program
+    .program__container.container
+      .program__row.flex
+        .program__entry
+          .program__title.title Программа
+
+          dl.program__list
+
+            .program__item
+              dt.program__term Бизнес-мероприятия
+              dd.program__desc Мероприятия деловой направленности открывают возможности для общения с экспертами отрасли, знакомства с интересными бизнес-кейсами и приобретения идей для развития собственного бизнеса!
+
+            .program__item
+              dt.program__term Мероприятия для мастеров
+              dd.program__desc Опытные мастера и известные профессионалы своего дела делятся популярными техниками, последними трендами и рассказывают, как стать еще лучше в своей профессии.
+
+            .program__item
+              dt.program__term Конгресс по косметологии и эстетической медицине
+              dd.program__desc Программа конгресса разработана практикующими врачами-косметологами и адресована врачам-косметологам, дерматологам, пластическим хирургам, которым интересны тенденции развития инъекционной и терапевтической косметологии и актуальные вопросы в рамках специальности.
+
+            .program__item
+              dt.program__term Конференция "Бизнес-кейсы для руководителей салонов и клиник"
+              dd.program__desc Конференция для руководителей салонов красоты и клиник. Ведущие руководители салонов и клиник делятся реальными кейсами и секретами успеха по различным аспектам бизнеса: финансы, персонал, реклама, лояльность, услуги и имидж руководителя.
+
+        .program__form
+          .program__form-title.title Программа мероприятий
+
+          .program__form-w.form.form_theme_second
+            form(action="" method='post')
+
+              .form__row
+
+                .form__field
+                  input.form__input(type="text", name="", value="", placeholder="ФИО")
+                .form__field.form__field_phone
+                  input.form__input(type="text", name="", value="", placeholder="Телефон")
+                .form__field
+                  input.form__input(type="text", name="", value="", placeholder="E-mail")
+                .form__field
+                  input.form__submit.button(type="submit", value="Скачать программу")
+
+              .form__row
+                .form__field.form__field_privacy
+                  label.form__label.flex
+                    input.form__checkbox(type="checkbox" checked)
+                    span.form__label-text Даю согласие на обработку моих персональных данных
+                      a.form__label-link(href="#privacy") ссылка на страницу об обработке
+
+
+
+          .program__form-note
+            .program__note После отправки заполненной формы мы вам отправим письмо на почту, электронный версию, доступ и проч.

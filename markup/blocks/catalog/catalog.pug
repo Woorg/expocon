@@ -1,11 +1,11 @@
 mixin catalog(data)
-  section.catalog
+  section.catalog&attributes(attributes)
     .catalog__container.container
       .catalog__bg
       h2.catalog__title.title Каталог экспонентов
       .catalog__top
         .catalog__items.flex
-          a.catalog__item(href="#")
+          a.catalog__item.catalog__item_active(href="#")
             picture.catalog__image
               source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x')
               source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x')
@@ -768,4 +768,76 @@ mixin catalog(data)
 
 
 
+mixin catalog-secondary(data)
+  section.catalog&attributes(attributes)
+    .catalog__container.container
+      h2.catalog__title.title Каталог экспонентов
+      .catalog__top
+        .catalog__items.flex
+          a.catalog__item.catalog__item_active(href="#")
+            picture.catalog__image
+              source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x')
+              source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x')
+              img.lazy(data-src="assets/images/content/catalog-company.png", alt="")
+            .catalog__item-entry
+              .catalog__item-title Завод Melsitech
 
+              .catalog__item-country Россия
+              .catalog__item-city г. Нижний Новгород
+
+          a.catalog__item(href="#")
+            picture.catalog__image
+              source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x')
+              source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x')
+              img.lazy(data-src="assets/images/content/catalog-company.png", alt="")
+            .catalog__item-entry
+              .catalog__item-title Завод Melsitech
+
+              .catalog__item-country Россия
+              .catalog__item-city г. Нижний Новгород
+
+          a.catalog__item(href="#")
+            picture.catalog__image
+              source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x')
+              source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x')
+              img.lazy(data-src="assets/images/content/catalog-company.png", alt="")
+            .catalog__item-entry
+              .catalog__item-title Завод Melsitech
+
+              .catalog__item-country Россия
+              .catalog__item-city г. Нижний Новгород
+
+          a.catalog__item(href="#")
+            picture.catalog__image
+              source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x')
+              source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x')
+              img.lazy(data-src="assets/images/content/catalog-company.png", alt="")
+            .catalog__item-entry
+              .catalog__item-title Завод Melsitech
+
+              .catalog__item-country Россия
+              .catalog__item-city г. Нижний Новгород
+
+          a.catalog__item(href="#")
+            picture.catalog__image
+              source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x')
+              source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x')
+              img.lazy(data-src="assets/images/content/catalog-company.png", alt="")
+            .catalog__item-entry
+              .catalog__item-title Завод Melsitech
+
+              .catalog__item-country Россия
+              .catalog__item-city г. Нижний Новгород
+
+          a.catalog__item(href="#")
+            picture.catalog__image
+              source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x')
+              source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/content/catalog-company@2x.png 2x, assets/images/content/catalog-company.png 1x')
+              img.lazy(data-src="assets/images/content/catalog-company.png", alt="")
+            .catalog__item-entry
+              .catalog__item-title Завод Melsitech
+
+              .catalog__item-country Россия
+              .catalog__item-city г. Нижний Новгород
+
+        a.catalog__more(href="#") Показать еще

@@ -1,1 +1,28 @@
-// .page
+.page
+  &__row_first
+    padding-bottom: 26px
+  &__container
+    position: relative
+    z-index: 2
+    display: flex
+    align-items: flex-start
+    +r($medium)
+      flex-wrap: wrap
+
+  &__exhibition
+    max-width: 572px
+    width: 100%
+    flex-shrink: 0
+    +r($medium)
+      margin-bottom: 50px
+      max-width: 100%
+
+  &__register
+    margin-top: auto
+    margin-left: 33px
+    margin-bottom: auto
+    max-width: 570px
+    width: 100%
+    +r($medium)
+      margin-left: 0
+      max-width: 100%

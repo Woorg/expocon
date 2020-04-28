@@ -1,5 +1,5 @@
 mixin exhibition(data)
-  .exhibition
+  .exhibition.exhibition_first&attributes(attributes)
     .exhibition__container.container
       .exhibition__bg
       .exhibition__slider
@@ -84,3 +84,58 @@ mixin exhibition(data)
 
         button.exhibition__arrow.exhibition__arrow_back.slider-nav__arrow.slider-nav__arrow_back
         button.exhibition__arrow.exhibition__arrow_next.slider-nav__arrow.slider-nav__arrow_next
+
+
+
+
+
+mixin exhibition-secondary(data)
+  .exhibition.exhibition_secondary&attributes(attributes)
+    .exhibition__top
+      .exhibition__header.flex
+        .exhibition__title-w
+          .exhibition__type Виртуальная выставка
+          h1.exhibition__title "Beauty Digital 2020"
+
+        .exhibition__price
+          .exhibition__price-title Стоимость online-билета
+          .exhibition__price-w
+            .exhibition__price-val 450 руб
+
+      .exhibition__date Дата: с 15.06 до 12.07.2020г.
+
+    .exhibition__slider
+      .exhibition__item
+        .exhibition__entry
+          img(src="assets/images/content/ticket-image-1.jpg", alt="")
+          button.exhibition__video-button
+            != pugHelpers.Icon.call(locals, {iconName: 'play-icon', className: 'exhibition__video-icon'})
+      .exhibition__item
+        .exhibition__entry
+          img(src="assets/images/content/ticket-image-1.jpg", alt="")
+          button.exhibition__video-button
+            != pugHelpers.Icon.call(locals, {iconName: 'play-icon', className: 'exhibition__video-icon'})
+      .exhibition__item
+        .exhibition__entry
+          img(src="assets/images/content/ticket-image-1.jpg", alt="")
+          button.exhibition__video-button
+            != pugHelpers.Icon.call(locals, {iconName: 'play-icon', className: 'exhibition__video-icon'})
+
+    .exhibition__nav.flex
+      button.exhibition__arrow.exhibition__arrow_back
+        != pugHelpers.Icon.call(locals, {iconName: 'arrow', className: 'exhibition__arrow-icon'})
+
+      button.exhibition__arrow.exhibition__arrow_next
+        != pugHelpers.Icon.call(locals, {iconName: 'arrow', className: 'exhibition__arrow-icon'})
+
+    #exhThumbs.exhibition__thumbs
+      .exhibition__thumbs-item
+        .exhibition__thumbs-w
+          img(src="assets/images/content/ticket-thumb-1.jpg", alt="")
+      .exhibition__thumbs-item
+        .exhibition__thumbs-w
+          img(src="assets/images/content/ticket-thumb-2.jpg", alt="")
+      .exhibition__thumbs-item
+        .exhibition__thumbs-w
+          img(src="assets/images/content/ticket-thumb-3.jpg", alt="")
+

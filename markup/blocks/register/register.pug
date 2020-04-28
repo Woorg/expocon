@@ -1,0 +1,105 @@
+mixin register(data)
+  .register&attributes(attributes)
+    .register__tabs.tabs
+      ul.register__tabs-nav.flex.tabs__nav(data-tabs)
+        li.register__tabs-item.tabs__nav-item
+          a.register__tabs-link(data-tabby-default href="#buy-ticket") Приобрести билет
+        li.register__tabs-item
+          a.register__tabs-link( href="#enter") Войти
+
+      .register__tabs-content
+        #buy-ticket.register__tab
+          .register__form.form
+            form(action="" method='post')
+
+              .form__row
+
+                .form__field
+                  input.form__input(type="text", name="", value="", placeholder="ФИО")
+                .form__field.form__field_phone
+                  input.form__input(type="text", name="", value="", placeholder="Телефон")
+                .form__field
+                  input.form__input(type="text", name="", value="", placeholder="E-mail")
+                .form__field
+                  input.form__submit.button.button_theme_form(type="submit", value="Посетить выставку")
+
+              .form__row
+                .form__field.form__field_privacy
+                  label.form__label.flex
+                    input.form__checkbox(type="checkbox" checked)
+                    span.form__label-text Даю согласие на обработку моих персональных данных
+                      a.form__label-link(href="#privacy") ссылка на страницу об обработке
+
+
+
+
+        #enter.register__tab
+
+          .register__form.form
+            form(action="" method='post')
+
+              .form__row
+
+                .form__field
+                  input.form__input(type="text", name="", value="", placeholder="Логин")
+                .form__field.form__field_phone
+                  input.form__input(type="text", name="", value="", placeholder="Пароль")
+                .form__field
+                  input.form__submit.button.button_theme_form(type="submit", value="Войти")
+
+              a.form__forget(href="#forget") Забыли пароль?
+
+
+
+
+
+mixin register-enter(data)
+  .register&attributes(attributes)
+    .register__tabs.tabs
+      ul.register__tabs-nav.flex.tabs__nav(data-tabs)
+        li.register__tabs-item.tabs__nav-item
+          a.register__tabs-link(href="#buy-ticket") Приобрести билет
+        li.register__tabs-item
+          a.register__tabs-link(data-tabby-default href="#enter") Войти
+
+      .register__tabs-content
+        #buy-ticket.register__tab
+          .register__form.form
+            form(action="" method='post')
+
+              .form__row
+
+                .form__field
+                  input.form__input(type="text", name="", value="", placeholder="ФИО")
+                .form__field.form__field_phone
+                  input.form__input(type="text", name="", value="", placeholder="Телефон")
+                .form__field
+                  input.form__input(type="text", name="", value="", placeholder="E-mail")
+                .form__field
+                  input.form__submit.button.button_theme_form(type="submit", value="Посетить выставку")
+
+              .form__row
+                .form__field.form__field_privacy
+                  label.form__label.flex
+                    input.form__checkbox(type="checkbox" checked)
+                    span.form__label-text Даю согласие на обработку моих персональных данных
+                      a.form__label-link(href="#privacy") ссылка на страницу об обработке
+
+
+
+
+        #enter.register__tab
+
+          .register__form.form
+            form(action="" method='post')
+
+              .form__row
+
+                .form__field
+                  input.form__input(type="text", name="", value="", placeholder="Логин")
+                .form__field.form__field_phone
+                  input.form__input(type="text", name="", value="", placeholder="Пароль")
+                .form__field
+                  input.form__submit.button.button_theme_form(type="submit", value="Войти")
+
+              a.form__forget(href="#forget") Забыли пароль?

@@ -19,8 +19,9 @@ mixin head(data)
   |<link rel="preload" href="%=static=%css/main%=hash=%%=min=%.css" as="style">
   |<link href="%=static=%css/main%=hash=%%=min=%.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
   //- |<link href="%=static=%css/separate-css/magnific-popup.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
-  |<link href="%=static=%css/separate-css/slick.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
-  |<link href="%=static=%css/separate-css/slick-theme.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
+
+  |<link href="%=static=%css/separate-css/slick.css" rel="stylesheet" type="text/css" media="all" >
+  |<link href="%=static=%css/separate-css/slick-theme.css" rel="stylesheet" type="text/css" media="all" >
 
 
   meta(property="og:title", content="#{data.title}")

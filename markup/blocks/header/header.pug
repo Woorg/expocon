@@ -46,6 +46,56 @@ mixin header(data)
             input.search__submit(type="submit", value="Поиск")
 
 
+
+
+mixin header-secondary(data)
+  header.header.header_secondary
+    .header__container.container
+      .header__top.flex
+        a.logo.logo_secondary.header__logo(href="#")
+          picture.logo__image
+            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/logo@2x.webp 2x, assets/images/general/logo.webp 1x')
+            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/logo@2x.png 2x, assets/images/general/logo.png 1x')
+
+            img.lazy(data-src="assets/images/general/logo@2x.png", alt="logo Expocon")
+
+        nav.header__nav.nav
+
+          != pugHelpers.Icon.call(locals, {iconName: 'menu-icon', className: 'nav__button'})
+
+          ul.nav__list.flex
+            li.nav__item.nav__item_current
+              a.nav__link(href="#") Главная
+            li.nav__item
+              a.nav__link(href="#") О выставке
+            li.nav__item
+              a.nav__link(href="#") Экспоненты
+            li.nav__item
+              a.nav__link(href="#") Контакты
+
+        .header__phone
+          a.phone(href="tel:+70000000") 8 000 000 00 00
+
+        .header__h-user.h-user.flex
+          .h-user__list-w
+            a.h-user__button(href="#button") Войти на выставку
+            ul.h-user__list.h-user__list_active
+              li.h-user__item
+                a.h-user__link(href="#button") Стать участником
+              li.h-user__item
+                a.h-user__link(href="#button") Посетить выставку
+
+          // .h-user__avatar
+
+      .header__bottom.flex
+
+        .header__search.search
+          form.flex(action="", method="get")
+            .search__field
+              input.search__input(type="text", value="", placeholder="")
+            input.search__submit(type="submit", value="Поиск")
+
+
       //- picture.header__logo.logo.lazy
       //-   source( data-srcset='assets/images/general/logo@2x.webp 2x, assets/images/general/logo.webp 1x'  sizes="(max-width: 820px) 280px,
       //-       (max-width: 480px) 440px,

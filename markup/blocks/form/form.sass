@@ -3,52 +3,138 @@
   display: flex
   flex-direction: column
   &__row
+    margin-bottom: 33px
     display: flex
     flex-wrap: wrap
+    +r($medium)
+      margin-bottom: (33px / 2)
+
     &:last-child,
     &:only-child
       margin-bottom: 0
 
+
   &__field
-    margin-bottom: 30px
+    margin-bottom: 18px
     width: 100%
     display: flex
     flex-grow: 1
+    &:last-child
+      margin-bottom: 0
 
-    &:nth-child(2)
-      .form__label-text
-        background: #2e36c0
+  &__field_privacy
+    .form__label
+      align-items: center
+      cursor: pointer
+      text-align: left
+
+    .form__label-text
+      margin-left: 11px
+      color: #ffffff
+    .form__label-link
+      // padding-bottom: 3px
+      display: inline-block
+      color: inherit
+      font-family: $fL
+      line-height: 1.4
+      // box-shadow: inset 0 -1px 0 #fff
+      +tr(all .3s linear)
+      &:hover
+        text-decoration: none
+        // box-shadow: none
+        +tr(all .3s linear)
+
+
 
   &__label
     position: relative
     flex-grow: 1
 
   &__label-text
-    position: absolute
-    top: -7px
-    left: 12px
-    padding-right: 6px
-    padding-left: 6px
-    background: #2a32b8
-    color: #d9d9d9
-    font-size: 12px
-    font-weight: 400
+    color: #ffffff
+    font-family: $fL
+    font-size: 14px
+    font-weight: 300
+    line-height: 1.14
 
 
   &__input
-    +resetbutton
-    border: 1px solid #e8e8e8
-    padding-right: 18px
-    padding-left: 18px
+    +resetbutton()
+    padding-right: 20px
+    padding-left: 20px
     width: 100%
-    height: 57px
-    color: $white
-    font-size: 14px
-    font-weight: 400
+    height: 54px
+    background-color: #ffffff
+    font-family: $fL
+    font-size: 16px
+    font-weight: 300
+    line-height: 1
+    text-align: left
+    color: #161b30
+    border-radius: 5px
+    +placeholder()
+      color: #161b30
+
+    +r($medium)
+      height: 40px
+
+  &__checkbox
+    position: relative
+    top: -2px
+    border: solid 1px #ffffff
+    appearance: none
+
+    width: 20px
+    height: 20px
+    flex-shrink: 0
+
+    background-color: transparent
+
+
     border-radius: 3px
-    +placeholder
-      color: $white
+
+    &:after
+      position: absolute
+      top: 50%
+      left: 50%
+      content: ''
+      opacity: 0
+      transform: translate(-50% , -50%)
+      +tr(opacity .3s linear)
+
+    &:checked
+      &:after
+        +bg($checked)
+        opacity: 1
+        +tr(opacity .3s linear)
 
   &__submit
+    display: block
+
     flex-grow: 1
     text-align: center
+
+  &__forget
+    margin-top: 0
+    margin-bottom: 0
+    display: inline-block
+    vertical-align: top
+    font-size: 18px
+    text-align: center
+    color: #ffffff
+    text-decoration: none
+
+    +r($medium)
+      margin-top: 0
+      font-size: 16px
+
+    &:hover
+      text-decoration: underline
+
+
+.form_theme_second
+  .form__submit
+    height: 54px
+    font-size: 18px
+    +r($medium)
+      height: 40px

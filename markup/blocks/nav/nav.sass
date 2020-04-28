@@ -59,14 +59,15 @@
 
   &__list
     width: 100%
-    justify-content: space-between
+    // justify-content: space-between
+    justify-content: flex-start
     align-items: center
 
     +r($large)
       display: none
 
   &__item
-    // margin-right: 55px
+    margin-right: 18px
 
     color: $white
     font-size: 14px
@@ -74,8 +75,8 @@
     font-weight: 500
     text-transform: uppercase
 
-    // &:last-child
-    //   margin-right: 0
+    &:last-child
+      margin-right: 0
 
     &:hover
       .nav__link
@@ -91,10 +92,10 @@
       +tr(all .3s ease)
 
   &__link
-    padding-top: 7px
+    padding-top: 3px
     padding-right: 18px
     padding-left: 18px
-    padding-bottom: 5px
+    padding-bottom: 4px
     display: block
     color: inherit
     line-height: 1
@@ -105,21 +106,33 @@
 
 .nav_secondary
   .nav__list
-    max-width: 461px
+    padding-right: 30px
+    max-width: 100%
     width: 100%
+    justify-content: center
     +r($large)
-      padding-right: 30px
       display: flex
+    +r($medium)
+      padding-right: 0
 
     +r($small)
-      display: block
+      // display: block
       flex-wrap: wrap
+      text-align: center
   .nav__item
+    margin-right: 40px
+    text-transform: none
     +r($large)
       max-width: 50%
+    +r($medium)
+      margin-right: 0
+      width: 100%
     +r($small)
       margin-bottom: 10px
       max-width: 100%
+
+    &:last-child
+      margin-right: 0
 
 
     &:hover
@@ -132,7 +145,11 @@
 
 
   .nav__link
+    padding-top: 0
     padding-right: 0
+    padding-bottom: 0
     padding-left: 0
+    font-size: 18px
+    line-height: 1
 
 

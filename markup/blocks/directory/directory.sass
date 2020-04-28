@@ -1,0 +1,79 @@
+.directory
+  position: relative
+  z-index: 2
+  &__container
+    padding-top: 28px
+    padding-bottom: 30px
+
+  &__nav
+    padding-top: 56px
+    padding-right: 44px
+    padding-bottom: 53px
+    padding-left: 44px
+    background-color: rgba(0, 0, 0, .57)
+    border-radius: 10px
+    overflow: hidden
+    +r($medium)
+      padding-bottom: 26px
+
+    +r($small)
+      padding-top: 26px
+      padding-bottom: 0
+      padding-right: (44px / 2)
+      padding-left: (44px / 2)
+
+  &__list
+    margin-right: -27px
+    margin-left: -27px
+    +r($medium)
+      flex-wrap: wrap
+    +r($small)
+      margin-right: 0
+      margin-left: 0
+
+  &__item
+    padding-right: 27px
+    padding-left: 27px
+    max-width: 25%
+    width: 100%
+
+    +r($medium)
+      margin-bottom: 27px
+      max-width: 50%
+
+    +r($small)
+      padding-right: 0
+      padding-left: 0
+      max-width: 100%
+
+  &__item_active
+    .directory__link
+      background-color: #4c6aef
+      box-shadow: 3.9px 3.1px 26.2px 5.8px rgba(67, 92, 203, 0.77)
+      +tr(all .3s linear)
+
+  &__link
+    border: solid 1px #ffffff
+    // padding-right: 20px
+    height: 49px
+    // background-color: #ffffff
+    justify-content: center
+    align-items: center
+
+    color: $white
+    font-size: 18px
+    text-decoration: none
+    border-radius: 5px
+    +tr(all .3s linear)
+
+    +r($small)
+      font-size: 16px
+
+    &:hover
+      background-color: #4c6aef
+      box-shadow: 3.9px 3.1px 26.2px 5.8px rgba(67, 92, 203, 0.77)
+      +tr(all .3s linear)
+
+  &__icon
+    margin-right: 16px
+    flex-shrink: 0

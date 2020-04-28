@@ -1,0 +1,61 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../blocks/head/head.pug
+  include ../blocks/header/header.pug
+  include ../blocks/footer/footer.pug
+
+  //- include ../blocks/exhibitions/exhibitions.pug
+  include ../blocks/exhibition/exhibition.pug
+  include ../blocks/register/register.pug
+
+
+  include ../blocks/register/register.pug
+  include ../blocks/why/why.pug
+  include ../blocks/directory/directory.pug
+  include ../blocks/about/about.pug
+  include ../blocks/program/program.pug
+
+  include ../blocks/stats/stats.pug
+  include ../blocks/catalog/catalog.pug
+  //- include ../blocks/map/map.pug
+
+  //- include ../blocks/stats/stats.pug
+  //- include ../blocks/levels/levels.pug
+  //- include ../blocks/income/income.pug
+  //- include ../blocks/product/product.pug
+  //- include ../blocks/video/video.pug
+  //- include ../blocks/payment/payment.pug
+  //- include ../blocks/advantages/advantages.pug
+  //- include ../blocks/faq/faq.pug
+  //- include ../blocks/get/get.pug
+  //- include ../blocks/popup/popup.pug
+
+  head
+    +head(head.defaults)
+  body.page.lazy(data-bg='url(assets/images/general/bg-2.jpg)')
+    +header-secondary()
+    |%=symbols=%
+    .page__inner
+      main.page__main.main
+        .page__row.page__row_first
+          .page__container.container.flex
+            +exhibition-secondary().page__exhibition
+            +register().page__register
+
+        +directory()
+        +why()
+        +about-secondary()
+        +stats().stats_secondary
+        +catalog-secondary().catalog_secondary
+        +program()
+
+    .page__bottom
+      +footer-secondary()
+
+    script(src='%=static=%js/separate-js/lazyload.min.js' defer)
+    script(src='%=static=%js/separate-js/jquery.min.js' defer)
+    script(src='%=static=%js/separate-js/slick.min.js' defer)
+    script(src='%=static=%js/main%=hash=%%=min=%.js' defer)
+
+

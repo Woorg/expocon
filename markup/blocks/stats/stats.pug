@@ -1,49 +1,38 @@
 mixin stats(data)
-  .stats
+  .stats&attributes(attributes)
     .stats__container.container
       ul.stats__list.flex
         li.stats__item
-          picture.stats__icon
-            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/stat-icon-1@2x.webp 2x, assets/images/general/stat-icon-1.webp 1x')
-            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/stat-icon-1@2x.png 2x, assets/images/general/stat-icon-1.png 1x')
-            img.lazy(data-srcset="assets/images/general/stat-icon-1@2x.png 2x, assets/images/general/stat-icon-1.png 1x ", alt="")
+          != pugHelpers.Icon.call(locals, {iconName: 'stat-icon-1', className: 'stats__icon' , iconWidth: '41', iconHeight: '41'})
 
           .stats__entry
             .stats__num 154+
             .stats__title Стенды
+
         li.stats__item
-          picture.stats__icon
-            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/stat-icon-2@2x.webp 2x, assets/images/general/stat-icon-2.webp 1x')
-            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/stat-icon-2@2x.png 2x, assets/images/general/stat-icon-2.png 1x')
-            img.lazy(data-srcset="assets/images/general/stat-icon-2@2x.png 2x, assets/images/general/stat-icon-2.png 1x ", alt="")
+          != pugHelpers.Icon.call(locals, {iconName: 'stat-icon-2', className: 'stats__icon' , iconWidth: '41', iconHeight: '41'})
 
           .stats__entry
             .stats__num 1654+
             .stats__title Товары
 
         li.stats__item
-          picture.stats__icon
-            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/stat-icon-3@2x.webp 2x, assets/images/general/stat-icon-3.webp 1x')
-            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/stat-icon-3@2x.png 2x, assets/images/general/stat-icon-3.png 1x')
-            img.lazy(data-srcset="assets/images/general/stat-icon-3@2x.png 2x, assets/images/general/stat-icon-3.png 1x ", alt="")
+          != pugHelpers.Icon.call(locals, {iconName: 'stat-icon-3', className: 'stats__icon' , iconWidth: '42', iconHeight: '40'})
+
           .stats__entry
             .stats__num 3000К+
             .stats__title Посетители
 
         li.stats__item
-          picture.stats__icon
-            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/stat-icon-4@2x.webp 2x, assets/images/general/stat-icon-4.webp 1x')
-            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/stat-icon-4@2x.png 2x, assets/images/general/stat-icon-4.png 1x')
-            img.lazy(data-srcset="assets/images/general/stat-icon-4@2x.png 2x, assets/images/general/stat-icon-4.png 1x ", alt="")
+          != pugHelpers.Icon.call(locals, {iconName: 'stat-icon-4', className: 'stats__icon' , iconWidth: '41', iconHeight: '41'})
+
           .stats__entry
             .stats__num 12+
             .stats__title Страны
 
         li.stats__item
-          picture.stats__icon
-            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/stat-icon-5@2x.webp 2x, assets/images/general/stat-icon-5.webp 1x')
-            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/stat-icon-5@2x.png 2x, assets/images/general/stat-icon-5.png 1x')
-            img.lazy(data-srcset="assets/images/general/stat-icon-1@2x.png 2x, assets/images/general/stat-5con-1.png 1x ", alt="")
+          != pugHelpers.Icon.call(locals, {iconName: 'stat-icon-5', className: 'stats__icon' , iconWidth: '47', iconHeight: '47'})
+
           .stats__entry
             .stats__num 29+
             .stats__title Спикеры

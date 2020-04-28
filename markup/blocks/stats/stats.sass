@@ -5,14 +5,15 @@
 
   &__container
     padding-top: 71px
-    padding-bottom: 100px
+    padding-bottom: 136px
     +r($medium)
       padding-top: (71px / 2)
-      padding-bottom: (50px / 2)
+      padding-bottom: (71px / 2)
 
 
   &__list
-    justify-content: space-between
+    // justify-content: space-between
+    justify-content: flex-start
     flex-wrap: wrap
     +r($medium)
       justify-content: flex-start
@@ -25,8 +26,10 @@
     justify-content: center
     align-items: center
     +r($medium)
-      margin-bottom: 20px
-      max-width: 33%
+      margin-bottom: 30px
+      max-width: 100%
+      justify-content: flex-start
+      text-align: left
 
     +r($small)
       max-width: 100%
@@ -42,32 +45,75 @@
       background-color: #4d6bef
       box-shadow: 4px 3px 26px 3px rgba(77, 107, 239, 0.81)
       transform: translateY(-50%)
+      +r($medium)
+        display: none
 
     &:last-child
       &:after
         display: none
 
-    &:nth-child(3n)
-      +r($medium)
-        &:after
-          display: none
-
-      +r($small)
-        &:after
-          display: block
-
-    &:nth-child(2n)
-      +r($small)
-        &:after
-          display: none
 
     &:nth-child(1n)
-      +r($small)
-        &:after
-          display: none
+      // padding-left: 20px
+      padding-right: 30px
+      max-width: 18.5%
+      +r($medium)
+        padding-right: 0
+        max-width: 100%
+
+      // +r($small)
+      //   &:after
+      //     display: none
+
+
+    &:nth-child(2n)
+      padding-left: 24px
+      // padding-right: 0
+      // max-width: 18.5%
+      max-width: 22%
+      +r($medium)
+        padding-left: 0
+        max-width: 100%
+      // +r($small)
+      //   &:after
+      //     display: none
+
+
+    &:nth-child(3n)
+      padding-left: 38px
+      max-width: 20%
+      +r($medium)
+        padding-left: 0
+        max-width: 100%
+
+      // +r($medium)
+      //   &:after
+      //     display: none
+
+      // +r($small)
+      //   &:after
+      //     display: block
+
+    &:nth-child(4n)
+      padding-left: 10px
+      max-width: 20.5%
+      +r($medium)
+        padding-left: 0
+        max-width: 100%
+
+
+    &:nth-child(5n)
+      padding-left: 58px
+      max-width: 18.5%
+      +r($medium)
+        padding-left: 0
+        max-width: 100%
+
+
 
   &__icon
-    +r($small)
+    flex-shrink: 0
+    +r($medium)
       display: none
 
   &__entry
@@ -88,3 +134,9 @@
     font-weight: 500
     line-height: 1
     text-shadow: 4px 3px 14px rgba(77, 107, 239, 0.46)
+
+
+.stats_secondary
+  .stats__container
+    padding-top: 58px
+
