@@ -31,8 +31,6 @@ mixin register(data)
                       a.form__label-link(href="#privacy") ссылка на страницу об обработке
 
 
-
-
         #enter.register__tab
 
           .register__form.form
@@ -48,6 +46,13 @@ mixin register(data)
                   input.form__submit.button.button_theme_form(type="submit", value="Войти")
 
               a.form__forget(href="#forget") Забыли пароль?
+
+
+              .form__field.form__field_privacy
+                label.form__label.flex
+                  input.form__checkbox(type="checkbox" checked)
+                  span.form__label-text Даю согласие на обработку моих персональных данных
+                    a.form__label-link(href="#privacy") ссылка на страницу об обработке
 
 
 
@@ -103,3 +108,9 @@ mixin register-enter(data)
                   input.form__submit.button.button_theme_form(type="submit", value="Войти")
 
               a.form__forget(href="#forget") Забыли пароль?
+
+              .form__field.form__field_privacy
+                label.form__label.flex
+                  input.form__checkbox(type="checkbox" checked)
+                  span.form__label-text Даю согласие на обработку моих персональных данных
+                    a.form__label-link(href="#privacy") ссылка на страницу об обработке

@@ -16,7 +16,11 @@
     justify-content: flex-start
     flex-wrap: wrap
     +r($medium)
-      justify-content: flex-start
+      margin: auto
+      max-width: 320px
+      justify-content: center
+      align-items: center
+
 
   &__item
     position: relative
@@ -59,7 +63,7 @@
       max-width: 18.5%
       +r($medium)
         padding-right: 0
-        max-width: 100%
+        max-width: 50%
 
       // +r($small)
       //   &:after
@@ -72,8 +76,8 @@
       // max-width: 18.5%
       max-width: 22%
       +r($medium)
-        padding-left: 0
-        max-width: 100%
+        padding-left: 27px
+        max-width: 50%
       // +r($small)
       //   &:after
       //     display: none
@@ -83,9 +87,11 @@
       padding-left: 38px
       max-width: 20%
       +r($medium)
-        padding-left: 0
-        max-width: 100%
-
+        margin-right: auto
+        margin-left: auto
+        padding-left: 10px
+        max-width: 60%
+        align-self: center
       // +r($medium)
       //   &:after
       //     display: none
@@ -99,27 +105,24 @@
       max-width: 20.5%
       +r($medium)
         padding-left: 0
-        max-width: 100%
+        max-width: 50%
 
 
     &:nth-child(5n)
       padding-left: 58px
       max-width: 18.5%
       +r($medium)
-        padding-left: 0
-        max-width: 100%
-
+        padding-left: 12px
+        max-width: 50%
 
 
   &__icon
     flex-shrink: 0
-    +r($medium)
-      display: none
 
   &__entry
     margin-left: 30px
-    +r($small)
-      margin-left: 0
+    +r($medium)
+      margin-left: 16px
 
 
   &__title

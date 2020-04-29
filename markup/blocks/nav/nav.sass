@@ -19,11 +19,13 @@
       border-radius: 10px
 
       +r($large)
-        left: 74px
-
-      +r($medium)
         left: 45px
-
+        // left: 74px
+      +r($medium)
+        top: calc(100% + 10px)
+        right: 0
+        left: auto
+        // transform: translateX(-50%)
 
     .nav__item
       width: 100%
@@ -39,9 +41,19 @@
       color: #ffffff
       font-family: $f
       font-size: 14px
-      font-weight: 500
       text-align: center
       text-decoration: none
+
+      +r($large)
+        padding-top: 7px
+        padding-right: 10px
+        padding-bottom: 6px
+        padding-left: 10px
+        font-size: 14px
+        text-transform: none
+
+        // height: 25px
+
       &:hover
         text-decoration: none
 
@@ -56,6 +68,8 @@
     cursor: pointer
     +r($large)
       display: block
+    +r($medium)
+      margin-right: 0
 
   &__list
     width: 100%
@@ -105,20 +119,22 @@
 
 
 .nav_secondary
+
+
+
   .nav__list
     padding-right: 30px
     max-width: 100%
     width: 100%
     justify-content: center
+    align-items: flex-start
     +r($large)
       display: flex
     +r($medium)
       padding-right: 0
-
-    +r($small)
-      // display: block
       flex-wrap: wrap
       text-align: center
+
   .nav__item
     margin-right: 40px
     text-transform: none
@@ -126,10 +142,9 @@
       max-width: 50%
     +r($medium)
       margin-right: 0
-      width: 100%
-    +r($small)
-      margin-bottom: 10px
+      margin-bottom: 20px
       max-width: 100%
+      width: 100%
 
     &:last-child
       margin-right: 0

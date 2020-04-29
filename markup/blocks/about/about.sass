@@ -28,8 +28,10 @@
       margin-left: 0
 
 
-  // &__item
-
+  &__item
+    &:nth-child(2)
+      +r($small)
+        display: none
   &__item-w
     padding-top: 15px
     padding-right: 30px
@@ -66,7 +68,9 @@
 
     +r($medium)
       max-width: 100%
-      width: auto
+      width: 100%
+    +r($small)
+      display: none
 
     img,
     source
@@ -94,22 +98,71 @@
       border-radius: 0 0 10px 10px
       background-image: none
 
+    +r($small)
+      padding-top: 22px
+      padding-bottom: 32px
+      padding-right: 15px
+      padding-left: 15px
+
+      background-image: url('../images/general/about-bg.png')
+      background-size: cover
+      border-radius: 10px
+
   &__title
     margin-bottom: 29px
+    +r($small)
+      margin-bottom: 17px
 
   &__text
     max-height: 209px
     overflow: hidden
     +r($medium)
-      max-height: 100000px
+      max-height: 100%
+      font-family: $fL
+      font-size: 14px
+      font-weight: 300
+    +r($small)
+      margin-bottom: 40px
+      max-height: 144px
     p
       margin-bottom: 20px
       line-height: 1.285
+      +r($small)
+        line-height: 1.29
 
   &__more
     margin-top: auto
     // margin-right: 20px
     align-self: flex-end
+    +r($small)
+      position: static
+      margin-top: 30px
+      padding-top: 10px
+      padding-right: 30px
+      padding-bottom: 10px
+      padding-left: 30px
+      height: 39px
+      align-self: center
+      font-size: 18px
+      border-radius: 5px
+      box-shadow: 2.5px 4.3px 25.8px 3.2px rgba(77, 107, 239, 0.81)
+
+  &__more-link
+    padding-bottom: 2px
+    display: none
+    color: $white
+    font-size: 18px
+    line-height: 1
+    text-align: center
+    text-decoration: none
+    box-shadow: inset 0 -1px 0 $white
+    +r($small)
+      display: block
+      display: flex
+      align-self: center
+    &:hover
+      box-shadow: inset 0 -1px 0 transparent
+
 
   &__nav
     position: absolute
@@ -122,6 +175,7 @@
       left: 40px
     +r($small)
       max-width: 82px
+      display: none
 
   &__nav-arrow
     position: absolute
@@ -157,12 +211,30 @@
     padding-right: 56px
     padding-bottom: 82px
 
+    +r($small)
+      padding-top: 22px
+      padding-bottom: 32px
+      padding-right: 15px
+      padding-left: 15px
+
   .about__more
     position: absolute
     bottom: 45px
     right: 48px
     margin-top: 30px
     padding-left: 28px
+    +r($small)
+      position: static
+      padding-top: 10px
+      padding-right: 30px
+      padding-bottom: 10px
+      padding-left: 30px
+      height: 39px
+      align-self: center
+      font-size: 18px
+      border-radius: 5px
+      box-shadow: 2.5px 4.3px 25.8px 3.2px rgba(77, 107, 239, 0.81)
+
 
   .about__nav
     top: calc(100% - 90px)

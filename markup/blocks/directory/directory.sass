@@ -4,25 +4,47 @@
   &__container
     padding-top: 28px
     padding-bottom: 30px
+    +r($medium)
+      padding-top: 30px
 
   &__nav
+    position: relative
+    margin-right: -15px
+    margin-left: -15px
     padding-top: 56px
     padding-right: 44px
     padding-bottom: 53px
     padding-left: 44px
     background-color: rgba(0, 0, 0, .57)
     border-radius: 10px
-    overflow: hidden
     +r($medium)
       padding-bottom: 26px
+      padding-right: 15px
+      padding-left: 15px
+      background: none
+
+    &:after
+      position: absolute
+      // z-index: 1
+      top: -15px
+      left: -35px
+      right: -35px
+      bottom: -15px
+      content: ''
+      background-color: rgba(0, 0, 0, .57)
 
     +r($small)
+      margin: auto
+      margin-right: 15px
+      margin-left: 15px
       padding-top: 26px
       padding-bottom: 0
-      padding-right: (44px / 2)
-      padding-left: (44px / 2)
+      // padding-right: 0
+      // padding-left: 0
 
   &__list
+    position: relative
+    z-index: 1
     margin-right: -27px
     margin-left: -27px
     +r($medium)
@@ -42,15 +64,34 @@
       max-width: 50%
 
     +r($small)
+      margin-bottom: 20px
       padding-right: 0
       padding-left: 0
       max-width: 100%
 
+    &:nth-child(1)
+      +r($small)
+        order: 0
+    &:nth-child(2)
+      +r($small)
+        order: 2
+    &:nth-child(3)
+      +r($small)
+        order: 1
+    &:nth-child(4)
+      +r($small)
+        order: 3
+
+
+
   &__item_active
     .directory__link
+
       background-color: #4c6aef
       box-shadow: 3.9px 3.1px 26.2px 5.8px rgba(67, 92, 203, 0.77)
       +tr(all .3s linear)
+      +r($small)
+        border: none
 
   &__link
     border: solid 1px #ffffff
@@ -66,10 +107,11 @@
     border-radius: 5px
     +tr(all .3s linear)
 
-    +r($small)
-      font-size: 16px
+    // +r($small)
+    //   border: none
 
     &:hover
+      border: none
       background-color: #4c6aef
       box-shadow: 3.9px 3.1px 26.2px 5.8px rgba(67, 92, 203, 0.77)
       +tr(all .3s linear)

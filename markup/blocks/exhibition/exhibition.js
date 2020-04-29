@@ -124,12 +124,10 @@ module.exports = function exhibitionSlider () {
         responsive: [
           {
             breakpoint: 1,
-            settings: {
-              slidesToShow: 3,
-            }
+            settings: 'unslick'
           },
           {
-            breakpoint: 600,
+            breakpoint: 640,
             settings: {
               slidesToShow: 3,
             }

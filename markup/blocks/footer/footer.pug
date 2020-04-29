@@ -76,6 +76,8 @@ mixin footer(data)
 
 
 
+
+
 mixin footer-secondary(data)
   footer.footer.footer_theme_secondary
     .footer__container.container.flex
@@ -102,6 +104,27 @@ mixin footer-secondary(data)
               a.nav__link(href="#") Экспоненты
             li.nav__item
               a.nav__link(href="#") Контакты
+
+
+        .footer__payment.payment.payment_secondary.flex
+          .payment__text Способы оплаты:
+          .payment__w.flex
+            picture.payment__variant.payment__variant_1
+              source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/visa@2x.webp 2x, assets/images/general/visa.webp 1x')
+              source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/visa@2x.png 2x, assets/images/general/visa.png 1x')
+              img.lazy(data-src="assets/images/general/visa.png", alt="")
+
+            picture.payment__variant.payment__variant_2
+              source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/master@2x.webp 2x, assets/images/general/master.webp 1x')
+              source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/master@2x.png 2x, assets/images/general/master.png 1x')
+              img.lazy(data-src="assets/images/general/master.png", alt="")
+
+            picture.payment__variant.payment__variant_3
+              source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/mir@2x.webp 2x, assets/images/general/mir.webp 1x')
+              source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/mir@2x.png 2x, assets/images/general/mir.png 1x')
+              img.lazy(data-src="assets/images/general/mir.png", alt="")
+
+
 
         .footer__links.flex
           a.footer__link(href="#") Написать нам
@@ -133,24 +156,7 @@ mixin footer-secondary(data)
 
 
 
-      .footer__col.footer__col_payment
+      //- .footer__col.footer__col_payment
 
-        .footer__payment.payment.payment_secondary.flex
-          .payment__text Способы оплаты:
-          .payment__w.flex
-            picture.payment__variant.payment__variant_1
-              source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/visa@2x.webp 2x, assets/images/general/visa.webp 1x')
-              source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/visa@2x.png 2x, assets/images/general/visa.png 1x')
-              img.lazy(data-src="assets/images/general/visa.png", alt="")
-
-            picture.payment__variant.payment__variant_2
-              source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/master@2x.webp 2x, assets/images/general/master.webp 1x')
-              source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/master@2x.png 2x, assets/images/general/master.png 1x')
-              img.lazy(data-src="assets/images/general/master.png", alt="")
-
-            picture.payment__variant.payment__variant_3
-              source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/mir@2x.webp 2x, assets/images/general/mir.webp 1x')
-              source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/mir@2x.png 2x, assets/images/general/mir.png 1x')
-              img.lazy(data-src="assets/images/general/mir.png", alt="")
 
 

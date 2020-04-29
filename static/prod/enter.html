@@ -16,8 +16,8 @@
     <link rel="manifest" href="site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="preload" href="assets/css/mainc7wlqc.min.css" as="style">
-    <link href="assets/css/mainc7wlqc.min.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
+    <link rel="preload" href="assets/css/main4n4tl.min.css" as="style">
+    <link href="assets/css/main4n4tl.min.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
     <link href="assets/css/separate-css/slick.css" rel="stylesheet" type="text/css" media="all">
     <link href="assets/css/separate-css/slick-theme.css" rel="stylesheet" type="text/css" media="all">
     <meta property="og:title" content="#{data.title}">
@@ -46,7 +46,7 @@
                   <img class="lazy" data-src="assets/images/general/logo@2x.png" alt="logo Expocon">
             </picture>
           </a>
-          <nav class="header__nav nav">
+          <nav class="header__nav nav nav_primary">
             <svg class="nav__button" width="24px" height="18px">
               <use xlink:href="#menu-icon"></use>
             </svg>
@@ -193,17 +193,14 @@
         <div class="page__row page__row_first">
           <div class="page__container container flex">
             <div class="exhibition exhibition_secondary page__exhibition">
-              <div class="exhibition__top">
-                <div class="exhibition__header flex">
-                  <div class="exhibition__title-w">
-                    <div class="exhibition__type">Виртуальная выставка</div>
-                    <h1 class="exhibition__title">"Beauty Digital 2020"</h1>
-                  </div>
-                  <div class="exhibition__price">
-                    <div class="exhibition__price-title">Стоимость online-билета</div>
-                    <div class="exhibition__price-w">
-                      <div class="exhibition__price-val">450 руб</div>
-                    </div>
+              <div class="exhibition__top flex">
+                <h1 class="exhibition__title">
+                    <div class="exhibition__type">Виртуальная выставка</div>"Beauty Digital 2020"
+                  </h1>
+                <div class="exhibition__price">
+                  <div class="exhibition__price-title">Стоимость online-билета</div>
+                  <div class="exhibition__price-w">
+                    <div class="exhibition__price-val">450 руб</div>
                   </div>
                 </div>
                 <div class="exhibition__date">Дата: с 15.06 до 12.07.2020г.</div>
@@ -325,6 +322,11 @@
                             <input class="form__submit button button_theme_form" type="submit" value="Войти">
                           </div>
                         </div><a class="form__forget" href="#forget">Забыли пароль?</a>
+                        <div class="form__field form__field_privacy">
+                          <label class="form__label flex">
+                            <input class="form__checkbox" type="checkbox" checked><span class="form__label-text">Даю согласие на обработку моих персональных данных<a class="form__label-link" href="#privacy">ссылка на страницу об обработке</a></span>
+                          </label>
+                        </div>
                       </form>
                     </div>
                   </div>
@@ -403,7 +405,7 @@
                       <p>Мероприятие служит эффективной площадкой для демонстрации новых продуктов и технологий во всех сферах мировой beauty-индустрии. Это идеальная возможность познакомиться с актуальными трендами и тенденциями индустрии красоты, принять
                         участие в авторских мастер-классах, решить насущные задачи бизнеса, послушать мнения экспертов красоты, узнать больше о последних разработках и технологиях производства со всего мира, определить траектории развития бизнеса, и конечно
                         же — в полной мере прочувствовать атмосферу красоты.magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                    </div><a class="about__more button" href="#">Получить консультацию</a>
+                    </div><a class="about__more-link" href="#">Читать далее</a><a class="about__more button" href="#">Войти на выставку</a>
                   </div>
                   <picture class="about__image">
                     <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/about-image-2@2x.webp 2x, assets/images/content/about-image-2.webp 1x">
@@ -420,7 +422,7 @@
                       <p>Мероприятие служит эффективной площадкой для демонстрации новых продуктов и технологий во всех сферах мировой beauty-индустрии. Это идеальная возможность познакомиться с актуальными трендами и тенденциями индустрии красоты, принять
                         участие в авторских мастер-классах, решить насущные задачи бизнеса, послушать мнения экспертов красоты, узнать больше о последних разработках и технологиях производства со всего мира, определить траектории развития бизнеса, и конечно
                         же — в полной мере прочувствовать атмосферу красоты.magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                    </div><a class="about__more button" href="#">Получить консультацию</a>
+                    </div><a class="about__more button" href="#">Войти на выставку</a>
                   </div>
                   <picture class="about__image">
                     <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/content/about-image-2@2x.webp 2x, assets/images/content/about-image-2.webp 1x">
@@ -661,6 +663,26 @@
                 </li>
               </ul>
             </nav>
+            <div class="footer__payment payment payment_secondary flex">
+              <div class="payment__text">Способы оплаты:</div>
+              <div class="payment__w flex">
+                <picture class="payment__variant payment__variant_1">
+                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/general/visa@2x.webp 2x, assets/images/general/visa.webp 1x">
+                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/general/visa@2x.png 2x, assets/images/general/visa.png 1x">
+                      <img class="lazy" data-src="assets/images/general/visa.png" alt="">
+                </picture>
+                <picture class="payment__variant payment__variant_2">
+                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/general/master@2x.webp 2x, assets/images/general/master.webp 1x">
+                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/general/master@2x.png 2x, assets/images/general/master.png 1x">
+                      <img class="lazy" data-src="assets/images/general/master.png" alt="">
+                </picture>
+                <picture class="payment__variant payment__variant_3">
+                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/general/mir@2x.webp 2x, assets/images/general/mir.webp 1x">
+                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/general/mir@2x.png 2x, assets/images/general/mir.png 1x">
+                      <img class="lazy" data-src="assets/images/general/mir.png" alt="">
+                </picture>
+              </div>
+            </div>
             <div class="footer__links flex"><a class="footer__link" href="#">Написать нам</a><a class="footer__link" href="#">Пользовательское соглашение</a><a class="footer__link" href="#">Политика конфиденциальности</a>
             </div>
             <div class="footer__social social flex">
@@ -694,35 +716,13 @@
               </a>
             </div>
           </div>
-          <div class="footer__col footer__col_payment">
-            <div class="footer__payment payment payment_secondary flex">
-              <div class="payment__text">Способы оплаты:</div>
-              <div class="payment__w flex">
-                <picture class="payment__variant payment__variant_1">
-                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/general/visa@2x.webp 2x, assets/images/general/visa.webp 1x">
-                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/general/visa@2x.png 2x, assets/images/general/visa.png 1x">
-                      <img class="lazy" data-src="assets/images/general/visa.png" alt="">
-                </picture>
-                <picture class="payment__variant payment__variant_2">
-                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/general/master@2x.webp 2x, assets/images/general/master.webp 1x">
-                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/general/master@2x.png 2x, assets/images/general/master.png 1x">
-                      <img class="lazy" data-src="assets/images/general/master.png" alt="">
-                </picture>
-                <picture class="payment__variant payment__variant_3">
-                  <source type="image/webp" media="(min-width:300px)" data-srcset="assets/images/general/mir@2x.webp 2x, assets/images/general/mir.webp 1x">
-                    <source type="image/png" media="(min-width:300px)" data-srcset="assets/images/general/mir@2x.png 2x, assets/images/general/mir.png 1x">
-                      <img class="lazy" data-src="assets/images/general/mir.png" alt="">
-                </picture>
-              </div>
-            </div>
-          </div>
         </div>
       </footer>
     </div>
     <script src="assets/js/separate-js/lazyload.min.js" defer></script>
     <script src="assets/js/separate-js/jquery.min.js" defer></script>
     <script src="assets/js/separate-js/slick.min.js" defer></script>
-    <script src="assets/js/mainc7wlqc.min.js" defer></script>
+    <script src="assets/js/main4n4tl.min.js" defer></script>
   </body>
 
 </html>

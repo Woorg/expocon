@@ -126,6 +126,8 @@ import Tabby from 'tabbyjs';
     }
 
 
+    // List pages
+
     // function pageWidget(pages) {
     //   var widgetWrap = $('<div class="widget_wrap"><ul class="widget_list"></ul></div>');
     //   widgetWrap.prependTo("body");

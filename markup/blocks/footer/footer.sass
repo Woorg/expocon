@@ -8,22 +8,30 @@
     justify-content: space-between
     +r($medium)
       flex-wrap: wrap
-
+      justify-content: center
+      text-align: center
 
   &__col
-    max-width: 170px
+    max-width: 174px
     width: 100%
 
   &__col_main
-    max-width: 570px
+    // max-width: 570px
+    max-width: 870px
     display: flex
-    flex-direction: column
-    align-items: center
+    flex-wrap: wrap
+    align-items: flex-start
+    // flex-direction: column
+    // align-items: center
 
     +r($medium)
-      margin-top: 30px
+      margin-top: 18px
       margin-bottom: 30px
       max-width: 100%
+      flex-direction: column
+      align-items: center
+
+
 
   &__logo
     margin-top: 40px
@@ -72,9 +80,14 @@
   &__nav
     max-width: 461px
     width: 100%
+    +r($medium)
+      margin: auto
 
   &__payment
     margin-top: 22px
+    +r($medium)
+      flex-direction: column
+      justify-content: center
 
   &__contacts
     margin-bottom: 27px
@@ -119,21 +132,33 @@
       justify-content: center
   .footer__nav
     padding-left: 50px
-    max-width: 100%
+    // max-width: 100%
+    max-width: 570px
     +r($medium)
+      margin-bottom: 35px
       padding-left: 0
+      order: 0
+
   .footer__payment
     margin-top: 0
+    margin-left: auto
+    +r($medium)
+      order: 2
+      margin-left: 0
 
   .footer__links
+    margin-top: -60px
     margin-bottom: 27px
     padding-top: 33px
     padding-left: 0
-    max-width: 100%
+    // max-width: 100%
+    max-width: 570px
     justify-content: center
 
     +r($medium)
-      order: 0
+      margin-top: 0
+      padding-top: 45px
+      order: 3
       flex-wrap: wrap
       text-align: center
 
@@ -142,8 +167,27 @@
     +r($medium)
       width: 100%
       margin-right: 0
+      order: 4
     &:last-child
+
       margin-right: 0
+
+  .footer__social
+    margin-right: auto
+    margin-left: 200px
+    max-width: 570px
+    width: 100%
+    +r($medium)
+      margin-bottom: 34px
+      margin-right: 0
+      margin-left: 0
+      order: 1
+      justify-content: center
+
+  .footer__contact
+    +r($small)
+      margin-bottom: 22px
+
 
 
 .social
@@ -164,6 +208,9 @@
     line-height: 1.388
   &__w
     margin-left: 20px
+    +r($medium)
+      margin-left: 0
+
 
   &__variant
     margin-right: 6px

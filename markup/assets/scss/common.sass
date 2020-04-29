@@ -18,8 +18,11 @@ body
   font-weight: 400
   line-height: 1.285
   font-display: swap
+  +r($small)
+    background-size: 1111px 1035px
   +mq($medium)
     font-size: 14px
+
 
 
   &__inner
@@ -34,9 +37,9 @@ body
   padding-left: 30px
   width: 100%
   max-width: 1230px
-  +r($large)
-    padding-right: 10px
-    padding-left: 10px
+  +r($medium)
+    padding-right: 15px
+    padding-left: 15px
 
 img
   max-width: 100%

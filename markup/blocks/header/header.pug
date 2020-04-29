@@ -59,7 +59,7 @@ mixin header-secondary(data)
 
             img.lazy(data-src="assets/images/general/logo@2x.png", alt="logo Expocon")
 
-        nav.header__nav.nav
+        nav.header__nav.nav.nav_primary
 
           != pugHelpers.Icon.call(locals, {iconName: 'menu-icon', className: 'nav__button'})
 

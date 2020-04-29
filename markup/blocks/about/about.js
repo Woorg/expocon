@@ -24,9 +24,7 @@ module.exports = function aboutSlider () {
         responsive: [
           {
             breakpoint: 1,
-            settings: {
-              slidesToShow: 1,
-            }
+            settings: 'unslick'
           },
           {
             breakpoint: 600,

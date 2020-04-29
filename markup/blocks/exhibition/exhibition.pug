@@ -91,33 +91,47 @@ mixin exhibition(data)
 
 mixin exhibition-secondary(data)
   .exhibition.exhibition_secondary&attributes(attributes)
-    .exhibition__top
-      .exhibition__header.flex
-        .exhibition__title-w
-          .exhibition__type Виртуальная выставка
-          h1.exhibition__title "Beauty Digital 2020"
+    .exhibition__top.flex
 
-        .exhibition__price
-          .exhibition__price-title Стоимость online-билета
-          .exhibition__price-w
-            .exhibition__price-val 450 руб
+      h1.exhibition__title
+        .exhibition__type Виртуальная выставка
+        | "Beauty Digital 2020"
+
+      .exhibition__price
+        .exhibition__price-title Стоимость online-билета
+        .exhibition__price-w
+          .exhibition__price-val 450 руб
 
       .exhibition__date Дата: с 15.06 до 12.07.2020г.
 
     .exhibition__slider
       .exhibition__item
         .exhibition__entry
+
+
           img(src="assets/images/content/ticket-image-1.jpg", alt="")
+
+
+
+          button.exhibition__video-button
+            != pugHelpers.Icon.call(locals, {iconName: 'play-icon', className: 'exhibition__video-icon'})
+
+
+
+      .exhibition__item
+        .exhibition__entry
+
+
+          img(src="assets/images/content/ticket-image-1.jpg", alt="")
+
           button.exhibition__video-button
             != pugHelpers.Icon.call(locals, {iconName: 'play-icon', className: 'exhibition__video-icon'})
       .exhibition__item
         .exhibition__entry
+
           img(src="assets/images/content/ticket-image-1.jpg", alt="")
-          button.exhibition__video-button
-            != pugHelpers.Icon.call(locals, {iconName: 'play-icon', className: 'exhibition__video-icon'})
-      .exhibition__item
-        .exhibition__entry
-          img(src="assets/images/content/ticket-image-1.jpg", alt="")
+
+
           button.exhibition__video-button
             != pugHelpers.Icon.call(locals, {iconName: 'play-icon', className: 'exhibition__video-icon'})
 
