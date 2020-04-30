@@ -81,6 +81,12 @@
       margin-right: 0
 
 
+  &__items_mobile_show_three
+    .catalog__item
+      &:nth-child(n + 4)
+        +r($small)
+          display: none
+
   &__items_sub
 
     .catalog__item
@@ -149,9 +155,8 @@
       padding-left: 0
       max-width: 100%
 
-    &:nth-child(n + 4)
-      +r($small)
-        display: none
+
+
 
 
 

@@ -4,7 +4,7 @@ mixin catalog(data)
       .catalog__bg
       h2.catalog__title.title Каталог экспонентов
       .catalog__top
-        .catalog__items.flex
+        .catalog__items.catalog__items_mobile_show_three.flex
           a.catalog__item.catalog__item_active(href="#")
             picture.catalog__image
               source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x')
@@ -773,7 +773,7 @@ mixin catalog-secondary(data)
     .catalog__container.container
       h2.catalog__title.title Каталог экспонентов
       .catalog__top
-        .catalog__items.flex
+        .catalog__items.catalog__items_mobile_show_three.flex
           a.catalog__item.catalog__item_active(href="#")
             picture.catalog__image
               source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/content/catalog-company@2x.webp 2x, assets/images/content/catalog-company.webp 1x')
