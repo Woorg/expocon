@@ -23,8 +23,8 @@
         // left: 74px
       +r($medium)
         top: calc(100% + 10px)
-        right: 0
-        left: auto
+        right: auto
+        left: 0
         // transform: translateX(-50%)
 
     .nav__item
@@ -168,3 +168,10 @@
     line-height: 1
 
 
+.nav_primary
+  &.nav_active
+    .nav__list
+      +r($medium)
+        top: calc(100% + 10px)
+        right: 0
+        left: auto

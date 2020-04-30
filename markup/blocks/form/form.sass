@@ -28,7 +28,8 @@
 
   &__field_privacy
     +r($small)
-      margin-top: 44px
+      // margin-top: 44px
+      margin-top: 26px
 
     .form__label
       align-items: center
@@ -138,26 +139,23 @@
   &__forget
     margin-top: 0
     margin-bottom: 0
-    display: inline-block
-    vertical-align: top
-    font-size: 18px
-    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-grow: 1
+    height: 46px
     color: #ffffff
+    font-size: 18px
     text-decoration: none
+    text-align: center
+    border-radius: 5px
 
     +r($medium)
-      margin-top: 0
       margin-bottom: 20px
       font-size: 16px
 
     +r($small)
       margin-bottom: 0
-      height: 46px
-      display: flex
-      justify-content: center
-      align-items: center
-      font-size: 18px
-      border-radius: 5px
       background-color: #364ba7
       +tr(all .3s linear)
 
