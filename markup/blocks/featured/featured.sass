@@ -1,0 +1,237 @@
+.featured
+  &__container
+    position: relative
+    padding-top: 43px
+    padding-bottom: 64px
+    +r($small)
+      padding-top: 23px
+      padding-bottom: 36px
+    &::after
+      position: absolute
+      z-index: -1
+      top: 0
+      left: -30px
+      right: -30px
+      bottom: 0
+      content: ''
+      background: rgba(0,0,0, .3)
+      border-radius: 10px
+      +r($small)
+        display: block
+        left: -0px
+        right: -0px
+
+  &__title
+    margin-bottom: 14px
+    +r($small)
+      margin-bottom: 15px
+
+  &__slider
+    margin-right: -15px
+    margin-left: -15px
+    +r($small)
+      margin-right: 0
+      margin-left: 0
+
+  .slick-dotted.slick-slider
+    margin-bottom: 33px
+    +r($small)
+      margin-bottom: 11px
+
+  .slick-list
+    +r($small)
+      margin-right: -8px
+      margin-left: -8px
+
+  &__item
+    padding-top: 30px
+    padding-right: 15px
+    padding-bottom: 30px
+    padding-left: 15px
+    display: block
+    cursor: pointer
+    border-radius: 10px
+
+    &.slick-current,
+    &:hover
+      .featured__image
+        z-index: -1
+      .featured__link
+        height: 100%
+        background: rgba(77,107,239, .85)
+        visibility: visible
+        opacity: 1
+        box-shadow: 4px 3px 26px 3px rgba(77, 107, 239, 0.81)
+        border-radius: 10px
+        +tr(all .3s ease)
+
+  .slick-slide
+    +r($small)
+      padding-right: 8px
+      padding-left: 8px
+    & > div
+
+      +r($small)
+        position: relative
+
+
+  &__item-w
+    position: relative
+    height: 100%
+    background-size: cover
+    background-repeat: no-repeat
+    box-shadow: none
+    border-radius: 10px
+    +tr(all .3s ease)
+    +r($small)
+      height: 76px
+
+
+  &__content
+    position: relative
+    +r($small)
+      margin-bottom: 17px
+      // pading-right: 8px
+      // pading-left: 8px
+      width: 100%
+      height: 76px
+      vertical-align: top
+      font-size: 0
+
+    &:hover
+      cursor: pointer
+      .featured__image
+        z-index: -1
+        border-radius: 10px
+      .featured__link
+        +r($small)
+          visibility: visible
+          opacity: 1
+          min-height: 76px
+          background-color: rgba(77, 107, 239, .85)
+          font-size: 14px
+          line-height: 1.26
+          border-radius: 10px
+          box-shadow: 3px 4px 26px 3px rgba(77, 107, 239, 0.81)
+
+  &__image
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    border-radius: 10px
+    +r($small)
+      left: 0
+      right: 0
+    //   right: -8px
+
+  &__link
+    min-height: 150px
+    margin-top: auto
+    margin-bottom: auto
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    color: $white
+    font-size: 18px
+    font-weight: 500
+    line-height: 1
+    text-decoration: none
+    visibility: hidden
+    opacity: 0
+    border-radius: 10px
+    +tr(all .3s ease)
+
+
+  &__nav
+    margin-right: auto
+    margin-left: auto
+    max-width: 262px
+    width: 100%
+    +r($small)
+      position: relative
+      left: -14px
+      max-width: 164px
+
+
+  &__arrow
+    +r($small)
+      width: 16px
+    &::after
+      +r($small)
+        +bg($arrow-mob)
+
+  .slick-dots
+    bottom: -11px
+    li
+      padding: 0
+      height: 21px
+      +r($small)
+        width: auto
+        height: auto
+      button
+        +r($small)
+          width: 14px
+          height: 14px
+        &:before
+          +r($small)
+            width: 5px
+            height: 5px
+
+    .slick-active
+      button
+        top: -3px
+        width: 21px
+        height: 21px
+        background-color: rgba(77,107,239,.4)
+        border-radius: 50%
+        box-shadow: 4px 3px 26px 3px rgba(77, 107, 239, 0.81)
+        +r($small)
+          width: 14px
+          height: 14px
+        &:before
+          top: 50%
+          left: 50%
+          border: none
+          width: 13px
+          height: 13px
+          background-color: #4d6bef
+          text-indent: -9999px
+          transform: translate(-50%, -50%)
+          +r($small)
+            width: 9px
+            height: 9px
+
+.featured_theme_small
+  margin-top: 50px
+  +r($small)
+    margin-top: 18px
+  .featured__container
+    position: relative
+    padding-top: 50px
+    padding-bottom: 70px
+    +r($small)
+      padding-top: 23px
+      padding-bottom: 37px
+
+  .featured__title
+    margin-bottom: 0px
+    +r($small)
+      margin-bottom: 14px
+
+  .featured__item-w
+    +r($small)
+      height: 120px
+  .featured__link
+    min-height: 120px
+    +r($small)
+      min-height: 76px

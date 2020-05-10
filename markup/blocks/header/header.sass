@@ -39,11 +39,13 @@
       padding-left: 10px
 
   &__phone
+    margin-top: -5px
     margin-left: auto
     // padding-left: 67px
     max-width: 160px
     width: 100%
     +r($medium)
+      margin-top: 0
       display: none
 
 
@@ -55,77 +57,3 @@
 
   &__search
     max-width: 100%
-
-.header_secondary
-  // .header__container
-  //   +r($small)
-  //     max-width: 320px
-
-  .header__top
-    padding-top: 33px
-    +r($medium)
-      padding-top: 28px
-
-  .header__bottom
-    +r($medium)
-      padding-top: 30px
-      padding-bottom: 25px
-    +r($small)
-      padding-top: 25px
-      padding-bottom: 18px
-
-  .header__logo
-    +r($medium)
-      margin-top: 4px
-      order: 0
-
-  .header__nav
-    margin-top: -2px
-    padding-left: 30px
-    // max-width: 530px
-    max-width: 600px
-    width: 100%
-    +r($medium)
-      margin-left: 13px
-      padding-left: 0
-      max-width: 23px
-      order: 2
-
-
-  .header__h-user
-    +r($small)
-      margin-left: auto
-
-.logo
-  max-width: 140px
-  width: 100%
-  flex-shrink: 0
-  +r($medium)
-    max-width: 105px
-
-.logo_secondary
-    max-width: 170px
-    +r($small)
-       max-width: 105px
-
-.phone
-  position: relative
-  padding-left: 24px
-  display: flex
-  flex-shrink: 0
-  color: inherit
-  font-family: $fL
-  font-size: 16px
-  font-weight: 300
-  line-height: 1
-  text-decoration: none
-  white-space: nowrap
-  &:after
-    position: absolute
-    left: 0
-    top: 50%
-    content: ''
-    +bg($phone)
-    transform: translateY(-50%)
-
-

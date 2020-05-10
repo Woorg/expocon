@@ -7,6 +7,7 @@
   "dependencies": {
     "@babel/core": "^7.5.0",
     "@babel/preset-env": "^7.5.0",
+    "gulp-cli": "^2.2.0",
     "jquery": "^3.5.0",
     "jquery-mask-plugin": "^1.14.16",
     "magnific-popup": "^1.1.0",

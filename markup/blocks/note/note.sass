@@ -1,0 +1,106 @@
+.note
+  &__container
+    padding-bottom: 87px
+    text-align: center
+  &__title
+    margin-bottom: 34px
+    text-align: center
+    +r($small)
+      margin-bottom: 28px
+
+  &__w
+    margin-bottom: 40px
+    background-color: $blue
+    padding-top: 27px
+    padding-bottom: 15px
+    border-radius: 10px
+    text-align: left
+    +r($small)
+      padding-top: 24px
+
+  &__content
+    background-color: #ffffff
+    border-radius: 0 0 10px 10px
+    overflow-y: scroll
+    +scrollbar
+      background: #a7acc3
+    +scrollbar-track
+      border-radius: 10px
+      background-color: #a7acc3
+    +scrollbar-thumb
+      background: green
+      border-radius: 0 0 5px 5px
+      background-color: $blue
+
+
+
+  &__entry-w
+    border-top: 40px solid $white
+    border-bottom: 40px solid $white
+    height: 327px
+    color: #272727
+    +r($small)
+      border-top: 34px solid $white
+
+  &__entry
+    padding-right: 115px
+    padding-left: 40px
+    height: 100%
+    +r($small)
+      padding-right: 15px
+      padding-left: 15px
+
+  &__entry-title
+    margin-right: -77px
+    margin-bottom: 30px
+    font-size: 20px
+    line-height: 20px
+    text-align: center
+    +r($small)
+      margin-right: 0
+
+  &__entry-text
+    font-family: $fL
+    font-size: 14px
+    font-weight: 400
+    line-height: 1.42
+
+  &__button
+    padding-top: 9px
+    padding-right: 24px
+    padding-bottom: 6px
+    padding-left: 21px
+    height: 33px
+    display: inline-block
+
+    background-color: #4d6bef
+    color: $white
+    font-size: 16px
+    font-weight: 500
+    line-height: 1
+    text-decoration: none
+    white-space: nowrap
+    box-shadow: 4px 3px 26px 3px rgba(77, 107, 239, 0.81)
+    border-radius: 5px
+
+    +r($medium)
+      padding-top: 6px
+      padding-left: 10px
+      padding-right: 10px
+      height: 25px
+      font-size: 14px
+
+    &:hover
+      background-color: darken(#4d6bef, 10)
+
+// +scrollbar()
+// +scrollbar-track()
+// +scrollbar-thumb()
+
+
+
+// +scrollbar-track()
+
+// +scrollbar-thumb()
+
+// +scrollbar-track-piece()

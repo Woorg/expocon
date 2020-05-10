@@ -1,0 +1,33 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../blocks/head/head.pug
+  include ../blocks/header-personal/header-personal.pug
+  include ../blocks/footer/footer.pug
+
+  include ../blocks/history/history.pug
+  include ../blocks/note/note.pug
+  include ../blocks/featured/featured.pug
+
+  head
+    +head(head.defaults)
+  body.page.page_personal.lazy(data-bg='url(assets/images/general/bg-personal.png)')
+    +header-personal()
+    |%=symbols=%
+    .page__inner
+      main.page__main.main
+
+        +featured().featured_theme_general
+        +featured-second().featured_theme_small
+
+        +history()
+        +note()
+
+
+    .page__bottom
+      +footer-secondary()
+
+    script(src='%=static=%js/separate-js/lazyload.min.js' defer)
+    script(src='%=static=%js/separate-js/jquery.min.js' defer)
+    script(src='%=static=%js/separate-js/slick.min.js' defer)
+    script(src='%=static=%js/main%=hash=%%=min=%.js' defer)
