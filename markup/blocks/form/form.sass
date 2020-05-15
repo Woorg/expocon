@@ -2,6 +2,82 @@
 .form
   display: flex
   flex-direction: column
+
+  &__badge
+    position: absolute
+    top: calc(50% - 24px)
+    right: -30px
+    left: -4px
+    border: 1px solid #ffffff
+
+    padding-top: 30px
+    padding-right: 46px
+    padding-bottom: 33px
+    padding-left: 25px
+    display: none
+    max-width: 457px
+    width: 100%
+    align-items: center
+    justify-content: center
+    background-color: #435ccb
+    border-radius: 10px
+    box-shadow: 4px 3px 26px 6px rgba(67, 92, 203, 0.77)
+    transform: translateY(-50%)
+    +r($medium)
+      top: 0
+      right: 14px
+      left: 14px
+      padding-top: 24px
+      padding-right: 24px
+      padding-bottom: 24px
+      padding-left: 24px
+      width: auto
+      transform: none
+
+  &__badge-icon
+    width: 104px
+    color: #ffffff
+    +r($medium)
+      width: 60px
+
+  &__badge-text
+    position: relative
+    margin-left: 68px
+    text-align: left
+    line-height: 1.8
+    +r($medium)
+      margin-left: 41px
+      line-height: 1.4
+    &:after
+      position: absolute
+      top: 0
+      left: -40px
+      width: 1px
+      height: 100%
+      content: ''
+      background: rgba(255,255,255,.8)
+      +r($medium)
+        left: -20px
+
+  &__badge-close
+    +resetbutton()
+    position: absolute
+    top: 16px
+    right: 20px
+    width: 18px
+    // h
+    color: $white
+    +r($medium)
+      top: 10px
+      right: 10px
+  &__close-icon
+    +resetbutton()
+    color: rgba(255,255,255,.46)
+
+  &__badge_active
+    display: flex
+
+
   &__row
     margin-bottom: 33px
     display: flex

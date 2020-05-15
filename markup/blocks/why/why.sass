@@ -36,6 +36,7 @@
 
   &__item
     position: relative
+    margin-bottom: 20px
     padding-left: 21px
     line-height: 2
     font-size: 18px
@@ -58,6 +59,15 @@
       +r($medium)
         top: 8px
 
+  &__item-title
+    font-size: 16px
+
+  &__item-text
+    font-family: $fL
+    font-size: 16px
+    line-height: 1.125
+
+
   &__button
     margin-top: 24px
 
@@ -77,3 +87,43 @@
         position: static
         width: 336px
         transform: translate(-15px, 0px)
+
+
+
+
+.why_secondary
+  .why__container
+    padding-bottom: 99px
+    +r($medium)
+      padding-top: 58px
+      padding-bottom: 72px
+  .why__title
+    margin-bottom: 47px
+    +r($medium)
+      margin-bottom: 20px
+  .why__entry
+    padding-right: 0
+    +r($medium)
+      margin-right: -20px
+
+  .why__item
+    margin-bottom: 17px
+    padding-left: 29px
+    +r($medium)
+      margin-bottom: 19px
+      padding-left: 32px
+    &:after
+      top: 5px
+  .why__item-title
+    line-height: 1.2
+  .why__item-text
+    +r($medium)
+      font-size: 14px
+      line-height: 1.28
+  .why__image
+    +r($medium)
+      margin-top: 0
+    picture
+      transform: translate(60px, 26px)
+      +r($medium)
+        transform: translate(-10px, -8px)

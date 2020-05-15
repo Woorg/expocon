@@ -112,3 +112,69 @@ mixin register-enter(data)
                     input.form__checkbox(type="checkbox" checked)
                     span.form__label-text Даю согласие на обработку моих персональных данных
                       a.form__label-link(href="#privacy") ссылка на страницу об обработке
+
+
+
+mixin register-third(data)
+  .register.register_theme_secondary&attributes(attributes)
+    .register__tabs.tabs
+      ul.register__tabs-nav.flex.tabs__nav(data-tabs)
+        li.register__tabs-item.tabs__nav-item
+          a.register__tabs-link(data-tabby-default  href="#buy-ticket") Стать экспонентом
+        li.register__tabs-item
+          a.register__tabs-link(href="#enter") Войти
+
+      .register__tabs-content
+        #buy-ticket.register__tab
+          .register__form.form
+            form(action="" method='post')
+              .form__badge.form__badge_active
+                != pugHelpers.Icon.call(locals, {iconName: 'cross-icon', className: 'form__badge-icon'})
+                .form__badge-text Ваш билет верифицирован за другим посетителем выставки
+                button.form__badge-close
+                  != pugHelpers.Icon.call(locals, {iconName: 'close-icon', className: 'form__close-icon'})
+
+              .form__row
+                .form__field
+                  input.form__input(type="text", name="", value="", placeholder="Название компании")
+                .form__field.form__field_phone
+                  input.form__input(type="text", name="", value="", placeholder="Телефон")
+                .form__field
+                  input.form__input(type="text", name="", value="", placeholder="E-mail")
+                .form__field
+                  input.form__submit.button.button_theme_form(type="submit", value="Зарегистрироваться")
+
+              .form__row
+                .form__field.form__field_privacy
+                  label.form__label.flex
+                    input.form__checkbox(type="checkbox" checked)
+                    span.form__label-text Даю согласие на обработку моих персональных данных
+                      a.form__label-link(href="#privacy") ссылка на страницу об обработке
+
+          .register__form-note
+            .register__note После отправки заполненной формы с Вами свяжется менеджер, который будет курировать все вопросы по участию Вашей компании в выставке.
+
+
+        #enter.register__tab
+
+          .register__form.form
+            form(action="" method='post')
+
+              .form__row
+
+                .form__field
+                  input.form__input(type="text", name="", value="", placeholder="Логин")
+                .form__field.form__field_phone
+                  input.form__input(type="text", name="", value="", placeholder="Пароль")
+                .form__field
+                  input.form__submit.button.button_theme_form(type="submit", value="Войти")
+
+                a.form__forget(href="#forget") Забыли пароль?
+
+
+              .form__row
+                .form__field.form__field_privacy
+                  label.form__label.flex
+                    input.form__checkbox(type="checkbox" checked)
+                    span.form__label-text Даю согласие на обработку моих персональных данных
+                      a.form__label-link(href="#privacy") ссылка на страницу об обработке

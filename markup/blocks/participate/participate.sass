@@ -1,0 +1,114 @@
+.participate
+  &__container
+    position: relative
+    z-index: 1
+    padding-top: 205px
+    padding-bottom: 43px
+    +r($medium)
+      padding-top: 94px
+      padding-bottom: 10px
+      flex-wrap: wrap
+
+  &__bg
+    position: absolute
+    top: 158px
+    right: -24px
+    left: -24px
+    bottom: 0
+    content: ''
+    background-color: rgba(0,0,0,.3)
+    border-radius: 10px
+
+  &__entry,
+  &__list
+    max-width: 50%
+    width: 100%
+    +r($medium)
+      max-width: 100%
+
+  &__entry
+    position: relative
+    padding-right: 100px
+    +r($medium)
+      padding-right: 0
+      padding-bottom: 52px
+    &:after
+      position: absolute
+      top: 24px
+      right: 24px
+      content: ''
+      width: 1px
+      height: 359px
+      background-color: rgba(255,255,255,.29)
+      +r($medium)
+        display: none
+
+  &__title
+    margin-bottom: 30px
+    font-size: 30px
+    line-height: 1.4
+    text-transform: uppercase
+    +r($medium)
+      margin-bottom: 20px
+      font-size: 23px
+    span
+      font-weight: 700
+
+  &__text
+    margin-bottom: 42px
+    font-size: 18px
+    line-height: 1.444
+    +r($medium)
+      margin-bottom: 31px
+      font-size: 14px
+
+  &__button
+    +r($medium)
+      padding-right: 20px
+      padding-left: 20px
+
+  &__list
+    position: relative
+    margin-top: -9px
+    flex-wrap: wrap
+    +r($medium)
+      border-top: 1px solid rgba(255,255,255,.29)
+      margin-top: 0
+      padding-top: 20px
+
+  &__item
+    margin-bottom: 33px
+    padding-left: 55px
+    padding-right: 30px
+    max-width: 50%
+    width: 100%
+
+    +r($medium)
+      margin-bottom: 40px
+      max-width: 100%
+      padding-right: 40px
+      padding-left: 26px
+
+    &:nth-child(1)
+      +r($medium)
+        order: 0
+    &:nth-child(2)
+      +r($medium)
+        order: 2
+    &:nth-child(3)
+      +r($medium)
+        order: 1
+    &:nth-child(4)
+      +r($medium)
+        order: 3
+
+
+
+  &__icon
+    margin-left: -12px
+    +r($medium)
+      display: block
+
+  &__item-text
+    +r($medium)
+      margin-top: -7px

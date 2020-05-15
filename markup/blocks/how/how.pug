@@ -1,0 +1,51 @@
+mixin how(data)
+  section.how
+    .how__container.container
+      h2.how__title.title Как принять участие <br/>в онлайн выставке?
+      .how__row.flex
+        .how__entry
+          dl.how__steps
+            .how__item
+              dt.how__term Подайте заявку на тематическую онлайн выставку
+
+            .how__item
+              dt.how__term С Вами свяжется менеджер, который будет курировать все вопросы по участию Вашей компании в выставке
+
+            .how__item
+              dt.how__term Заключите договор и оплатите выбранный тариф
+
+            .how__item
+              dt.how__term Предоставьте нашим специалистам контент о вашей компании
+
+            .how__item
+              dt.how__term Наши специалисты создадут ваш стенд и выдадут доступы к личному кабинету
+
+
+        .how__form
+          .how__form-title.title Стать экспонентом
+
+          .how__form-w.form.form_theme_second
+            form(action="" method='post')
+
+              .form__row
+
+                .form__field
+                  input.form__input(type="text", name="", value="", placeholder="Название компании")
+                .form__field.form__field_phone
+                  input.form__input(type="text", name="", value="", placeholder="Телефон")
+                .form__field
+                  input.form__input(type="text", name="", value="", placeholder="E-mail")
+                .form__field
+                  input.form__submit.button(type="submit", value="Зарегистрироваться")
+
+              .form__row
+                .form__field.form__field_privacy
+                  label.form__label.flex
+                    input.form__checkbox(type="checkbox" checked)
+                    span.form__label-text Даю согласие на обработку моих персональных данных
+                      a.form__label-link(href="#privacy") ссылка на страницу об обработке
+
+
+
+          .how__form-note
+            .how__note После отправки заполненной формы с Вами свяжется менеджер, который будет курировать все вопросы по участию Вашей компании в выставке.

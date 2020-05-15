@@ -2,6 +2,7 @@ module.exports = function exhibitionSlider () {
 
     const $exhibitionSlider = $('.exhibition_first .exhibition__slider');
     const $exhibitionSecondarySlider = $('.exhibition_secondary .exhibition__slider');
+    const $exhibitionThirdSlider = $('.exhibition_third .exhibition__slider');
 
 
     if( $exhibitionSlider.length > 0 ) {
@@ -138,6 +139,45 @@ module.exports = function exhibitionSlider () {
 
     }
 
+
+
+    if( $exhibitionThirdSlider.length > 0 ) {
+
+      $exhibitionThirdSlider.slick({
+        slidesToScroll: 1,
+        dots: true,
+        mobileFirst: true,
+        // infinite: false,
+        loop: true,
+        lazyLoad: 'ondemand',
+        fade: true,
+        speed: 300,
+        focusOnSelect: true,
+        waitForAnimate: false,
+        accessibility:false,
+
+        // arrows: false,
+        appendDots: $('.exhibition_third .exhibition__dots'),
+        prevArrow: '.exhibition_third .exhibition__arrow_back',
+        nextArrow: '.exhibition_third .exhibition__arrow_next',
+
+        responsive: [
+          {
+            breakpoint: 1,
+            settings: {
+              slidesToShow: 1,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+        ]
+      });
+
+    }
 
 }
 

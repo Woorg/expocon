@@ -2,10 +2,7 @@ import svg4everybody from 'svg4everybody';
 import exhibitionSlider from '../../blocks/exhibition/exhibition';
 import aboutSlider from '../../blocks/about/about';
 import featuredSlider from '../../blocks/featured/featured';
-
 import Tabby from 'tabbyjs';
-
-
 
 // import levelsSlider from '../../blocks/levels/levels';
 // import paymentSlider from '../../blocks/payment/payment';
@@ -144,6 +141,18 @@ import Tabby from 'tabbyjs';
     }
 
 
+    // Form error
+
+    const $formBadge = $('.form__badge'),
+          $formBadgeClose = $('.form__badge-close');
+
+    $formBadgeClose.on('click', function (e) {
+      e.preventDefault();
+      $formBadge.toggleClass('form__badge_active');
+    });
+
+
+
     // List pages
 
     // function pageWidget(pages) {
@@ -161,7 +170,7 @@ import Tabby from 'tabbyjs';
     //   'buy-ticket',
     //   'enter',
     //   'personal',
-
+    //   'join',
     // ]);
 
 

@@ -1,0 +1,11 @@
+mixin join(data)
+  .join&attributes(attributes)
+    .join__caption Экспонентам
+    h2.join__title Принять участие <br/>в выставке
+
+    .join__text
+      p Участие в выставке *выставка с главной* - уникальная возможность представить Вашу компанию и продукцию на рынке и напрямую встретиться с широкой аудиторией покупателей и установить прочные деловые отношения
+    a.join__button.button.button_theme_third(href="#") Участвовать
+
+    .join__arrow-w
+      != pugHelpers.Icon.call(locals, {iconName: 'arrow', className: 'join__arrow'})

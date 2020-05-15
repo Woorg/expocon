@@ -1,0 +1,40 @@
+mixin participate(data)
+  section.participate
+    .participate__container.container.flex
+      .participate__bg
+      .participate__entry
+        h2.participate__title.title <span>Почему</span> <br/>стоит принять участие <br/>в <span>виртуальной</span> выставке
+        .participate__text
+          p Виртуальные выставки приобретают совершенно особый статус, обусловленный нынешней экономической ситуацией. Выставка онлайн не требует для ее посетителей планирования перелетов и бронирования отеля, что значительно сказывается на ее посещаемости в лучшую сторону.
+        a.participate__button.button.button_theme_third(href="#") Получить консультацию
+
+      ul.participate__list.flex
+        li.participate__item
+          picture.participate__icon
+            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/why-icon-1@2x.webp 2x, assets/images/general/why-icon-1.webp 1x')
+            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/why-icon-1@2x.png 2x, assets/images/general/why-icon-1.png 1x')
+
+            img.lazy(data-srcset='assets/images/general/why-icon-1@2x.png 2x, assets/images/general/why-icon-1.png 1x' alt="")
+
+          .participate__item-text Затраты на заключение сделки при участии на выставке в среднем на 40% ниже, чем без участия в выставке
+        li.participate__item
+          picture.participate__icon
+            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/why-icon-2@2x.webp 2x, assets/images/general/why-icon-2.webp 1x')
+            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/why-icon-2@2x.png 2x, assets/images/general/why-icon-2.png 1x')
+
+            img.lazy(data-srcset='assets/images/general/why-icon-2@2x.png 2x, assets/images/general/why-icon-2.png 1x' alt="")
+          .participate__item-text 90% представителей компаний, ответственных за принятие решений, назвали выставки наилучшим источником информации при совершении закупок
+        li.participate__item
+          picture.participate__icon
+            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/why-icon-3@2x.webp 2x, assets/images/general/why-icon-3.webp 1x')
+            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/why-icon-3@2x.png 2x, assets/images/general/why-icon-3.png 1x')
+
+            img.lazy(data-srcset='assets/images/general/why-icon-3@2x.png 2x, assets/images/general/why-icon-3.png 1x' alt="")
+          .participate__item-text Визуальный эффект от выставочного образца может длиться до 14 недель
+        li.participate__item
+          picture.participate__icon
+            source(type='image/webp' media='(min-width:300px)' data-srcset='assets/images/general/why-icon-4@2x.webp 2x, assets/images/general/why-icon-4.webp 1x')
+            source(type='image/png' media='(min-width:300px)' data-srcset='assets/images/general/why-icon-4@2x.png 2x, assets/images/general/why-icon-4.png 1x')
+
+            img.lazy(data-srcset='assets/images/general/why-icon-4@2x.png 2x, assets/images/general/why-icon-4.png 1x' alt="")
+          .participate__item-text Демонстрация продукции на выставке в 6 раз больше влияет на продажи, чем другие средства продвижения
