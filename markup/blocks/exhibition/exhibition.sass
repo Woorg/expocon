@@ -475,9 +475,9 @@
 
 .exhibition_third
   padding-top: 29px
-  padding-right: 24px
+  padding-right: 25px
   padding-bottom: 30px
-  padding-left: 24px
+  padding-left: 18px
   +r($medium)
     padding-top: 18px
     padding-right: 16px
@@ -525,6 +525,7 @@
       margin-bottom: 60px
 
   .exhibition__nav
+    position: relative
     margin-top: -33px
     margin-right: 20px
     margin-left: auto
@@ -532,13 +533,10 @@
     +r($medium)
       margin-top: 24px
       margin-right: 0
-      max-width: 68px
+      max-width: 76px
 
-
-  .slider-nav
-  position: relative
-  .slider__arrow_back,
-  .slider__arrow_next
+  .exhibition__arrow_back,
+  .exhibition__arrow_next
     &:after
       +r($medium)
         +bg($arrow-mob)

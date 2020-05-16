@@ -141,14 +141,14 @@ import Tabby from 'tabbyjs';
     }
 
 
-    // Form error
+    // register error
 
-    const $formBadge = $('.form__badge'),
-          $formBadgeClose = $('.form__badge-close');
+    const $registerBadgeWrapper = $('.register__badge-w'),
+          $registerBadgeClose = $('.register__badge-close');
 
-    $formBadgeClose.on('click', function (e) {
+    $registerBadgeClose.on('click', function (e) {
       e.preventDefault();
-      $formBadge.toggleClass('form__badge_active');
+      $registerBadgeWrapper.toggleClass('register__badge-w_active');
     });
 
 

@@ -126,13 +126,17 @@ mixin register-third(data)
 
       .register__tabs-content
         #buy-ticket.register__tab
+
           .register__form.form
+            .register__badge-w.register__badge-w_active
+              .register__badge
+                != pugHelpers.Icon.call(locals, {iconName: 'cross-icon', className: 'register__badge-icon'})
+                .register__badge-text Ваш билет верифицирован за другим посетителем выставки
+                button.register__badge-close
+                  != pugHelpers.Icon.call(locals, {iconName: 'close-icon', className: 'register__close-icon'})
+
             form(action="" method='post')
-              .form__badge.form__badge_active
-                != pugHelpers.Icon.call(locals, {iconName: 'cross-icon', className: 'form__badge-icon'})
-                .form__badge-text Ваш билет верифицирован за другим посетителем выставки
-                button.form__badge-close
-                  != pugHelpers.Icon.call(locals, {iconName: 'close-icon', className: 'form__close-icon'})
+
 
               .form__row
                 .form__field

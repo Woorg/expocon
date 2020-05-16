@@ -43,7 +43,11 @@
       padding-top: 18px
 
 .page_join
-  background-size: 2014px 729px
+  background-position: 50% 0
+  background-size: 100% 729px
+  +r($medium)
+    background-position: calc(50% + 300px) 0
+    background-size: 2014px 875px
 
   .page__main
     padding-top: 15px
@@ -74,10 +78,11 @@
     position: relative
     margin-top: 116px
     margin-left: auto
-
     padding-bottom: 0
     max-width: 601px
     +r($medium)
       margin-top: 0
+      margin-right: 15px
+      margin-left: 15px
       padding-top: 20px
       max-width: 100%
