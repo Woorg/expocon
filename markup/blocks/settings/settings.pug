@@ -1,0 +1,281 @@
+mixin settings(data)
+  .settings.lazy(data-bg='url(assets/images/general/planet-bg-3.jpg)')
+    .settings__container.container
+      .settings__w
+        h1.settings__title.title Настройка экспонента
+        form.settings__form.form(action="", method="post")
+          .settings__section.settings__section_video_phone
+            .settings__row.flex
+              .settings__col-video
+                .settings__section-title Видеоролики:
+                .settings__row-title Видеоролик:
+                a.settings__row-link(href="#") Видеоролик Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 1
+
+              .settings__col-photo
+                .settings__section-title Фото материалы:
+
+                .settings__row-title Фото материал:
+
+                .form__field.form__field_file
+                  input.form__file(type="file", name="")
+                  span.form__file-button.button Выберите фото
+                  a.form__file-remove.flex(href="#")
+                    != pugHelpers.Icon.call(locals, {iconName: 'delete-icon', className: 'form__file-cross'})
+                    | Удалить файл
+
+            .settings__row.flex
+              .settings__col-video
+                .settings__row-title Видеоролик:
+                a.settings__row-link(href="#") Видеоролик Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 1
+
+              .settings__col-photo
+                .settings__row-title Фото материал:
+
+                .form__field.form__field_file
+                  input.form__file(type="file", name="")
+                  span.form__file-button.button Выберите фото
+                  a.form__file-remove.flex(href="#")
+                    != pugHelpers.Icon.call(locals, {iconName: 'delete-icon', className: 'form__file-cross'})
+                    | Удалить файл
+
+            .settings__row.flex
+              .settings__col-video
+                .settings__row-title Видеоролик:
+                a.settings__row-link(href="#") Видеоролик Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 1
+
+              .settings__col-photo
+                .settings__row-title Фото материал:
+
+                .form__field.form__field_file
+                  input.form__file(type="file", name="")
+                  span.form__file-button.button Выберите фото
+                  a.form__file-remove.flex(href="#")
+                    != pugHelpers.Icon.call(locals, {iconName: 'delete-icon', className: 'form__file-cross'})
+                    | Удалить файл
+
+            .settings__row.flex
+              .settings__col-video
+                .settings__row-title Видеоролик:
+                a.settings__row-link(href="#") Видеоролик Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 1
+
+              .settings__col-photo
+                .settings__row-title Фото материал:
+
+                .form__field.form__field_file
+                  input.form__file(type="file", name="")
+                  span.form__file-button.button Выберите фото
+                  a.form__file-remove.flex(href="#")
+                    != pugHelpers.Icon.call(locals, {iconName: 'delete-icon', className: 'form__file-cross'})
+                    | Удалить файл
+
+
+            .settings__button-w
+              a.settings__add.open-popup(href="#add-video") Добавить еще
+
+
+          .settings__sections.flex
+            .settings__sections-col
+
+              .settings__section.settings__section_first
+                .form__field.form__field_settings
+                  label.form__label.form__label_settings.flex
+                    span.form__label-text Название:
+                    input.form__input.form__input_settings(type="text", value="", placeholder="Завод косметики “ЭкоСпарк”")
+
+                .form__field.form__field_settings
+                  label.form__label.form__label_settings.flex
+                    span.form__label-text Страна:
+                    input.form__input.form__input_settings(type="text", value="", placeholder="Завод косметики “ЭкоСпарк”")
+
+
+                .form__field.form__field_settings
+                  label.form__label.form__label_settings.flex
+                    span.form__label-text Адрес:
+                    input.form__input.form__input_settings(type="text" value="", placeholder="Завод косметики “ЭкоСпарк”")
+
+
+              .settings__section.settings__section_pres
+                h2.settings__section-title Презентации, файлы и видеотрансляции:
+
+                .settings__field-group
+                  .settings__caption Файлы о продукции
+                  .settings__fields
+                    .settings__field.form__field.form__field_file.form__field_file_name
+                      input.form__file(type="file", name="")
+                      .form__file-button.button Выберите фото
+                      .form__file-name Название файла
+                      a.form__file-remove.flex(href="#")
+                        != pugHelpers.Icon.call(locals, {iconName: 'delete-icon', className: 'form__file-cross'})
+                        | Удалить файл
+
+                    .settings__field.form__field.form__field_file.form__field_file_name
+                      input.form__file(type="file", name="")
+                      .form__file-button.button Выберите фото
+                      .form__file-name Название файла
+                      a.form__file-remove.flex(href="#")
+                        != pugHelpers.Icon.call(locals, {iconName: 'delete-icon', className: 'form__file-cross'})
+                        | Удалить файл
+
+                    .settings__field.form__field.form__field_file.form__field_file_name
+                      input.form__file(type="file", name="")
+                      .form__file-button.button Выберите фото
+                      .form__file-name Название файла
+                      a.form__file-remove.flex(href="#")
+                        != pugHelpers.Icon.call(locals, {iconName: 'delete-icon', className: 'form__file-cross'})
+                        | Удалить файл
+
+                .settings__field-group
+                  .settings__caption Файлы презентаций
+                  .settings__note *к названию каждого файла добавлять _pro
+
+                  .settings__fields
+                    .settings__field.form__field.form__field_file.form__field_file_name
+                      input.form__file(type="file", name="")
+                      .form__file-button.button Выберите фото
+                      .form__file-name Название файла
+                      a.form__file-remove.flex(href="#")
+                        != pugHelpers.Icon.call(locals, {iconName: 'delete-icon', className: 'form__file-cross'})
+                        | Удалить файл
+
+                    .settings__field.form__field.form__field_file.form__field_file_name
+                      input.form__file(type="file", name="")
+                      .form__file-button.button Выберите фото
+                      .form__file-name Название файла
+                      a.form__file-remove.flex(href="#")
+                        != pugHelpers.Icon.call(locals, {iconName: 'delete-icon', className: 'form__file-cross'})
+                        | Удалить файл
+
+                    .settings__field.form__field.form__field_file.form__field_file_name
+                      input.form__file(type="file", name="")
+                      .form__file-button.button Выберите фото
+                      .form__file-name Название файла
+                      a.form__file-remove.flex(href="#")
+                        != pugHelpers.Icon.call(locals, {iconName: 'delete-icon', className: 'form__file-cross'})
+                        | Удалить файл
+
+
+                .settings__field-group
+                  .settings__caption Ссылки на видеотрансляции YouTube
+                  .settings__note для добавления видеотрансляции, вставьте ID <br/>видеоролика YouTube
+
+                  .settings__fields
+                    .settings__field.form__field.form__field_link.flex
+                      input.form__input(type="text", name="" placeholder="Ссылка")
+                      a.form__input-remove.flex(href="#")
+                        != pugHelpers.Icon.call(locals, {iconName: 'delete-icon', className: 'form__input-cross'})
+                        | Удалить ссылку
+
+                    .settings__field.form__field.form__field_link
+                      input.form__input(type="text", name="" placeholder="Ссылка")
+                      a.form__input-remove.flex(href="#")
+                        != pugHelpers.Icon.call(locals, {iconName: 'delete-icon', className: 'form__input-cross'})
+                        | Удалить ссылку
+
+                    .settings__field.form__field.form__field_link
+                      input.form__input(type="text", name="" placeholder="Ссылка")
+                      a.form__input-remove.flex(href="#")
+                        != pugHelpers.Icon.call(locals, {iconName: 'delete-icon', className: 'form__input-cross'})
+                        | Удалить ссылку
+
+
+              .settings__section.settings__section_picture_info
+                h2.settings__section-title Картинка к информации о вашей компании
+
+                .settings__field-group
+                  .settings__fields
+                    .form__field.form__field_file.form__field_file_title.flex
+                      input.form__file(type="file", name="")
+                      span.form__file-button.button Выберите файл
+                      a.form__file-remove.flex(href="#")
+                        != pugHelpers.Icon.call(locals, {iconName: 'delete-icon', className: 'form__file-cross'})
+                        | Удалить файл
+                      .form__file-title Файл не выбран
+
+                .settings__placeholder
+
+
+            .settings__sections-col
+              .settings__section.settings__section_logo_company
+                h2.settings__section-title Логотип вашей компании:
+
+                .settings__field-group
+                  .settings__fields
+                    .form__field.form__field_file.form__field_file_title.flex
+                      input.form__file(type="file", name="")
+                      span.form__file-button.button Выберите файл
+                      a.form__file-remove.flex(href="#")
+                        != pugHelpers.Icon.call(locals, {iconName: 'delete-icon', className: 'form__file-cross'})
+                        | Удалить файл
+                      .form__file-title Файл не выбран
+
+                .settings__placeholder
+
+
+              .settings__section.settings__section_catalog_picture
+                h2.settings__section-title Картинка для каталога экспонентов:
+
+                .settings__field-group
+                  .settings__fields
+                    .form__field.form__field_file.form__field_file_title.flex
+                      input.form__file(type="file", name="")
+                      span.form__file-button.button Выберите файл
+                      a.form__file-remove.flex(href="#")
+                        != pugHelpers.Icon.call(locals, {iconName: 'delete-icon', className: 'form__file-cross'})
+                        | Удалить файл
+                      .form__file-title Файл не выбран
+
+                .settings__placeholder
+
+
+              .settings__section.settings__section_map
+                h2.settings__section-title На карте:
+                .settings__section-text Перетащите точку по карте или выберите новое положение двойным щелчком
+
+                .settings__placeholder
+
+
+                .form__row.form__row_map
+                  .form__field
+                    label.form__label.form__label_settings.flex
+                      span.form__label-text Адрес компании:
+                      input.form__input.form__input_settings(type="text", value="", placeholder="Адрес компании")
+
+                .form__row.form__row_map
+                  .form__field_coords
+                    input.form__input(type="text" name="" value="" placeholder="12.34567891234")
+                  .form__field-sep ,
+
+                  .form__field_coords
+                    input.form__input(type="text" name="" value="" placeholder="12.34567891234")
+
+                .form__row.form__row_map
+                  button.settings__to-marker Перейти к точке
+                  a.form__file-remove.flex(href="#")
+                    != pugHelpers.Icon.call(locals, {iconName: 'delete-icon', className: 'form__file-cross'})
+                    | Очистить значение
+
+              .settings__section.settings__section_picture_info
+                h2.settings__section-title Картинка к информации о вашей компании
+
+                .settings__field-group
+                  .settings__fields
+                    .form__field.form__field_file.form__field_file_title.flex
+                      input.form__file(type="file", name="")
+                      span.form__file-button.button Выбирете файл
+                      a.form__file-remove.flex(href="#")
+                        != pugHelpers.Icon.call(locals, {iconName: 'delete-icon', className: 'form__file-cross'})
+                        | Удалить файл
+                      .form__file-title Файл не выбран
+
+                .settings__placeholder
+
+
+          .settings__section.settings__section_company_info
+            h2.settings__section-title Информация о вашей компании:
+
+            .settings__section-entry
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+
+          .settings__buttons.flex
+            a.settings__button.button.button_active(href='#') Сохранить
+            a.settings__button.button(href='#') Отменить
