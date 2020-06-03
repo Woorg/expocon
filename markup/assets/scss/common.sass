@@ -134,3 +134,11 @@ img
           background-color: #4d6bef
           text-indent: -9999px
           transform: translate(-50%, -50%)
+
+
+.lazy
+  +tr(ease .3s)
+  &.loaded
+    visibility: visible
+    opacity: 1
+    +tr(ease .3s)

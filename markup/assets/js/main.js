@@ -186,6 +186,19 @@ import Tabby from 'tabbyjs';
     });
 
 
+    const $centrBlocks =  $('.congress-centr__blocks'),
+          $centrMore = $('.congress-centr__more');
+
+    $centrMore.on( 'click', function () {
+      // $(this).hide();
+      $(this).parent().prev($centrBlocks).toggleClass('congress-centr__blocks_active')
+      $(this).text(function (i, text) {
+        return text === 'Подробнее' ? 'Свернуть' : 'Подробнее';
+      });
+
+    });
+
+
 
     // Popup
 
@@ -216,7 +229,8 @@ import Tabby from 'tabbyjs';
       'personal',
       'join',
       'settings',
-
+      'congress center-index',
+      'congress center-program'
     ]);
 
 

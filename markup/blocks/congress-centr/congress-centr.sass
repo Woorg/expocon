@@ -1,0 +1,351 @@
+.congress-centr
+  &__container
+    // padding-top: 46px
+    padding-bottom: 58px
+    +r($small)
+      padding-top: 0
+      padding-bottom: 80px
+  &__title
+    margin-bottom: 42px
+    text-align: center
+    +r($small)
+      margin-bottom: 37px
+      font-size: 30px
+
+  &__cat
+    margin-bottom: 40px
+    +r($small)
+      margin-left: -2px
+      margin-bottom: 29px
+  // &__cat-list
+
+  &__cat-item
+    margin-right: 33px
+    +r($small)
+      margin-right: 8px
+      display: flex
+      flex-grow: 1
+
+    &:last-child
+      margin-right: 0
+  &__cat-item_active
+    .congress-centr__cat-link
+      border: 1px solid transparent
+      background-color: #4d6bef
+      box-shadow: 4px 3px 26px 3px rgba(77, 107, 239, 0.81)
+
+  &__cat-link
+    padding-top: 11px
+    padding-right: 40px
+    padding-bottom: 12px
+    padding-left: 40px
+    height: auto
+    box-shadow: none
+
+    +r($small)
+      padding-top: 9px
+      padding-right: 14px
+      padding-bottom: 11px
+      padding-left: 12px
+      display: flex
+      justify-content: center
+      flex-grow: 0
+      font-size: 12px
+
+    &:hover
+      border: 1px solid transparent
+      background-color: #4d6bef
+      box-shadow: 4px 3px 26px 3px rgba(77, 107, 239, 0.81)
+
+
+  &__content
+    &.loading
+      margin-top: 95px
+
+  &__days
+    margin-bottom: 40px
+    +r($small)
+      margin-left: -4px
+      margin-bottom: 32px
+      justify-content: center
+
+  &__day
+    margin-right: 50px
+    color: rgba(255,255,255,.43)
+    font-size: 18px
+    text-decoration: none
+    +tr(ease .3s)
+    &:last-child
+      margin-right: 0
+    &:hover
+      color: rgba(255,255,255,1)
+      +tr(ease .3s)
+
+
+  &__day_active
+    color: rgba(255,255,255,1)
+
+
+  &__list
+    +r($small)
+      margin-right: -15px
+      margin-left: -15px
+
+
+  &__item
+    margin-bottom: 32px
+    padding-bottom: 36px
+    background-color: rgba(0,0,0, 0.3)
+    border-radius: 10px
+    +r($small)
+      margin-bottom: 30px
+      padding-bottom: 25px
+
+    &:last-child
+      margin-bottom: 0
+
+  &__meta
+    padding-top: 27px
+    padding-right: 34px
+    padding-bottom: 24px
+    padding-left: 45px
+    align-items: center
+    +r($small)
+      padding-top: 35px
+      padding-right: 18px
+      padding-bottom: 24px
+      padding-left: 18px
+
+  &__date
+    position: relative
+    margin-right: 53px
+    padding-left: 30px
+    font-size: 18px
+    +r($small)
+      margin-right: 36px
+      font-size: 18px
+
+    &:after
+      position: absolute
+      top: 50%
+      left: 0
+      content: ''
+      +bg($time-icon)
+      transform: translateY(-50%)
+
+  &__session
+    color: #ffffff
+    font-size: 24px
+    +r($small)
+      font-size: 20px
+
+  &__join
+    margin-left: auto
+    border: 1px solid transparent
+    padding-top: 13px
+    padding-right: 26px
+    padding-bottom: 12px
+    padding-left: 26px
+    height: auto
+    background-color: #4d6bef
+    box-shadow: 4px 3px 26px 3px rgba(77, 107, 239, 0.81)
+    +tr(.3s ease)
+    +r($small)
+      padding-right: 18px
+      padding-left: 18px
+      display: none
+
+    &:hover
+      background-color: transparent
+      box-shadow: none
+      +tr(.3s ease)
+
+  &__item-title
+
+    padding-top: 11px
+    padding-right: 45px
+    padding-bottom: 17px
+    padding-left: 45px
+    background-color: rgba(77,107,239, .35)
+    font-size: 24px
+    line-height: 1.291
+    +r($small)
+      padding-right: 18px
+      padding-bottom: 12px
+      padding-left: 18px
+      font-size: 18px
+      line-height: 1.37
+
+  &__blocks
+    padding-top: 12px
+    +r($small)
+      display: none
+
+    &.congress-centr__blocks_active
+      margin-bottom: 0
+      padding-top: 10px
+      display: block
+      background-color: #ffffff
+      color: #161b30
+      .congress-centr__block
+        margin-bottom: 0
+        &:nth-child(1)
+          .congress-centr__block-title
+            +r($small)
+              margin-bottom: 16px
+
+        &:nth-child(2)
+          .congress-centr__block-title
+            +r($small)
+              margin-bottom: 22px
+
+      .congress-centr__block-title
+        box-shadow: inset 0 -1px 0 #161b30
+
+      .congress-centr__block-text
+        p
+          line-height: 1.3
+        ul
+          li
+            +r($small)
+              margin-bottom: 20px
+            &:before
+              color: #4d6bef
+
+            &:last-child
+              margin-bottom: 0
+
+
+      & + .congress-centr__button-w
+        margin-top: 0
+        padding-top: 17px
+        padding-bottom: 42px
+        background: $white
+        color: #161b30
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+        .congress-centr__more
+          margin-bottom: 30px
+          color: #161b30
+          flex-grow: 0
+          font-size: 20px
+          font-weight: 400
+          box-shadow: inset 0 -1px 0 #161b30
+          &:hover
+            box-shadow: inset 0 -1px 0 transparent
+
+        .congress-centr__button
+          border: none
+          display: flex
+          background-color: #4d6bef
+          &:hover
+            border: none
+            background-color: darken(#4d6bef, 10)
+
+
+
+  &__block
+    margin-bottom: 16px
+    padding-right: 45px
+    padding-left: 45px
+    +r($small)
+      padding-right: 18px
+      padding-left: 18px
+  &__block-title
+    margin-bottom: 23px
+    display: inline-block
+    vertical-align: top
+    font-size: 20px
+    line-height: 1.8
+    box-shadow: inset 0 -1px 0 $white
+  &__block-text
+    p,
+    li
+      margin-bottom: 12px
+      &:last-child
+        margin-bottom: 0
+    p
+      font-family: $fL
+
+    li
+      margin-bottom: 27px
+
+    strong,
+    b
+      font-family: $f
+
+    ul
+      counter-reset: item-number
+      li
+        position: relative
+        padding-left: 20px
+        counter-increment: item-number
+
+        &:before
+          position: absolute
+          top: 2px
+          left: 0
+          content: counter(item-number) '.'
+          color: #4d6bef
+          font-size: 14px
+          font-weight: 400
+          line-height: 1
+          text-shadow: 4px 3px 26px rgba(77, 107, 239, 0.81)
+
+
+  &__more
+    padding-bottom: 5px
+    display: none
+    color: #ffffff
+    font-size: 20px
+    text-decoration: none
+    box-shadow: inset 0 -1px 0 #FFF
+    +tr(.3s ease)
+    +r($small)
+      display: inline-block
+      vertical-align: top
+    &:hover
+      box-shadow: inset 0 -1px 0 transparent
+      +tr(.3s ease)
+
+  &__button-w
+    margin-top: 42px
+    text-align: center
+    +r($small)
+      margin-top: 10px
+
+  &__button
+    padding-top: 11px
+    padding-right: 26px
+    padding-bottom: 11px
+    padding-left: 26px
+    box-shadow: none
+    height: auto
+    +r($small)
+      display: none
+    &:hover
+      background-color: #4d6bef
+      box-shadow: 4px 3px 26px 3px rgba(77, 107, 239, 0.81)
+
+
+  &__loading
+    padding-top: 50px
+    padding-bottom: 57px
+    background-color: #4d6bef
+    text-align: center
+    font-size: 18px
+    border-radius: 10px
+    +r($small)
+      margin-top: 45px
+      padding-top: 31px
+
+  &__loading-icon
+    margin: auto
+    +bg($refresh-icon)
+
+  &__loading-text
+    +r($small)
+      margin-top: -5px
